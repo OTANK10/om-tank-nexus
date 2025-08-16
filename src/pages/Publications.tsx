@@ -39,8 +39,7 @@ const Publications = () => {
             Research <span className="gradient-text">Publications</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Contributions to the field of computer engineering through research in VLSI design, 
-            AI-hardware optimization, and advanced computing systems.
+            Contributions to the field of biomedical-electronics and wearable tech sensing systems.
           </p>
         </div>
 
