@@ -18,7 +18,8 @@ const projectsData = [
     ],
     technologies: ["PyTorch", "Python", "NetworkX", "Graph Neural Networks"],
     status: "Present",
-    image: "/api/placeholder/400/300"
+    image: "/lovable-uploads/4074fb03-061f-4553-8dec-868e35d677fe.png",
+    githubUrl: "https://github.com/OTANK10/GNN-Circuit-Timing-Prediction"
   },
   {
     id: 4,
@@ -314,7 +315,12 @@ const Projects = () => {
                   ) : project.title === "Tyre - Student Rideshare Platform" ? (
                     <div className="flex-1"></div>
                   ) : (
-                    <Button variant="outline" size="sm" className="flex-1">
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex-1"
+                      onClick={() => project.githubUrl && window.open(project.githubUrl, '_blank')}
+                    >
                       <Github className="w-4 h-4 mr-2" />
                       Show on GitHub
                     </Button>
