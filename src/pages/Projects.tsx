@@ -5,6 +5,23 @@ import { Code, Microchip, Brain, Smartphone, Zap, Cpu, ExternalLink, Github, Glo
 
 const projectsData = [
   {
+    id: 12,
+    title: "Cache Performance Analysis: Sorting Algorithms Under Different Memory Hierarchies",
+    icon: <Cpu className="w-6 h-6" />,
+    category: "Hardware",
+    description: "In-depth analysis of cache performance for Quicksort and Radix Sort algorithms using Valgrind's Cachegrind tool, examining how cache organization parameters impact algorithm performance across varying data sizes.",
+    highlights: [
+      "Comparative analysis of Quicksort vs Radix Sort cache behavior",
+      "Valgrind Cachegrind tool implementation",
+      "Memory hierarchy optimization study",
+      "Cache miss rate and access pattern analysis"
+    ],
+    technologies: ["C", "Valgrind", "Cachegrind", "Performance Analysis", "CPU Architecture"],
+    status: "Present",
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/cache-performance"
+  },
+  {
     id: 11,
     title: "Edge Computing: Research Challenges and Future Directions",
     icon: <Brain className="w-6 h-6" />,
