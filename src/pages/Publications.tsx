@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { BookOpen, FileText, Award, ExternalLink } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { BookOpen, FileText, Award, ExternalLink, ArrowRight } from "lucide-react";
 
 const publicationsData = [
   {
@@ -142,6 +143,19 @@ const Publications = () => {
               ))}
             </div>
           </Card>
+        </div>
+
+        {/* Navigation to Community */}
+        <div className="mt-16 text-center animate-fade-in">
+          <Button 
+            variant="outline" 
+            size="lg"
+            onClick={() => window.location.href = '/community'}
+            className="group hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
+          >
+            View Community Impact
+            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+          </Button>
         </div>
       </div>
     </div>
