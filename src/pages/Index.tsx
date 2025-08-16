@@ -11,6 +11,7 @@ const experienceData = [
     location: "Amherst, MA",
     period: "Present",
     type: "Research",
+    companyIcon: "/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png",
     description: "Leading AI integration across research labs. Facilitating identification and integration of AI agents across diverse research labs, streamlining workflows and developing AI-aware educational curriculum.",
     achievements: [
       "Facilitate identification and integration of AI agents across diverse research labs",
@@ -26,6 +27,7 @@ const experienceData = [
     location: "New York, NY (Remote)",
     period: "Fall '24 - Summer '25",
     type: "Academic",
+    companyIcon: null,
     description: "Leading cross-functional team developing intelligent wearable technology. Led team of 4 engineers developing Neely 33 Smart Shoe with integrated pressure sensors, IMUs, and Nordic nRF52840 MCU for gesture-based control.",
     achievements: [
       "Led team of 4 engineers developing Neely 33 Smart Shoe",
@@ -42,6 +44,7 @@ const experienceData = [
     location: "Boxborough, MA",
     period: "Summer '24",
     type: "Internship",
+    companyIcon: null,
     description: "Optimizing next-generation ZEN microprocessor designs. Optimized gate-level designs for ZEN microprocessor cores, reducing area utilization and built modular UVM-based testbench components.",
     achievements: [
       "Optimized gate-level designs for ZEN microprocessor cores, reducing area utilization",
@@ -58,6 +61,7 @@ const experienceData = [
     location: "Amherst, MA",
     period: "Fall '23",
     type: "Research",
+    companyIcon: "/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png",
     description: "Exploring non-silicon alternatives for next-generation computing. Designed analog circuits on Nafion wafers for VLSI alternatives and achieved 12% power efficiency improvement through signal integrity analysis.",
     achievements: [
       "Designed analog circuits on Nafion wafers for VLSI alternatives",
@@ -74,6 +78,7 @@ const experienceData = [
     location: "Amherst, MA",
     period: "Summer '23",
     type: "Internship",
+    companyIcon: "/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png",
     description: "Developing assistive technology for improved human interaction. Developed prosthetic arm control system with MyoWare muscle sensor integration and designed real-time embedded system for EMG signal processing.",
     achievements: [
       "Developed prosthetic arm control system with MyoWare muscle sensor integration",
@@ -90,6 +95,7 @@ const experienceData = [
     location: "Gujarat, India (Remote)",
     period: "Jan '21 - Jun '21",
     type: "Professional",
+    companyIcon: null,
     description: "First professional experience during COVID-19 pandemic. Developed web applications and software solutions during early college years, gaining foundational experience in software development lifecycle.",
     achievements: [
       "Developed web applications and software solutions during early college years",
@@ -157,6 +163,13 @@ const Index = () => {
                         </h3>
                         
                         <div className="flex items-center text-primary font-medium mb-1">
+                          {item.companyIcon && (
+                            <img 
+                              src={item.companyIcon} 
+                              alt={`${item.company} logo`}
+                              className="w-6 h-6 mr-2 rounded-sm object-contain"
+                            />
+                          )}
                           {item.company}
                         </div>
                         
