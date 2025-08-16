@@ -5,6 +5,23 @@ import { Code, Microchip, Brain, Smartphone, Zap, Cpu, ExternalLink, Github, Glo
 
 const projectsData = [
   {
+    id: 11,
+    title: "Edge Computing: Research Challenges and Future Directions",
+    icon: <Brain className="w-6 h-6" />,
+    category: "Research",
+    description: "A commentary on the current paradigm of edge computing, examining core challenges including efficient resource management, real-time task processing, and adaptive system control in resource-constrained environments.",
+    highlights: [
+      "Comprehensive literature review of 5 major edge computing papers",
+      "Critical analysis of current approaches and limitations",
+      "Future directions focusing on AI integration and energy efficiency",
+      "Published via UMass College of Engineering"
+    ],
+    technologies: ["Edge Computing", "IoT", "Resource Management", "Real-time Systems"],
+    status: "Published",
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/Edge-Computing"
+  },
+  {
     id: 3,
     title: "GNN based Circuit Timing Prediction for VLSI Design",
     icon: <Brain className="w-6 h-6" />,
@@ -186,6 +203,7 @@ const categoryColors = {
 
 const statusColors = {
   "In Development": "bg-yellow-500/10 text-yellow-700 border-yellow-200",
+  "Published": "bg-green-500/10 text-green-700 border-green-200",
   "Present": "bg-green-500/10 text-green-700 border-green-200",
   "YC Interview Stage": "bg-orange-500/10 text-orange-700 border-orange-200",
   "June 25": "bg-blue-500/10 text-blue-700 border-blue-200",
