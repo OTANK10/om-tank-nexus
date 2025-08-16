@@ -81,7 +81,7 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <div className="mt-16 flex justify-center animate-bounce">
           <button 
             onClick={() => {
               const experienceSection = document.querySelector('[data-section="experience"]');
