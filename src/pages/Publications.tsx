@@ -17,14 +17,14 @@ const publicationsData = [
   },
   {
     id: 2,
-    title: "Low-Power Memory Controller Design for Edge Computing Applications",
-    authors: "Om Tank, Dr. Wilson, Research Team",
-    venue: "ACM/IEEE Design Automation Conference (DAC)",
-    year: "2024",
-    type: "Conference Paper",
+    title: "Smart Shoes - First Steps in Bio-Mechanical Sensing",
+    authors: "Om Tank, Malachi Mcknight, Owen Fedele, Mandy Peng, Jeremy Gummeson, Baird Soules, Margo Neely",
+    venue: "IEEE Pervasive Computing Journal",
+    year: "2026",
+    type: "Journal Paper",
     status: "Under Review",
-    description: "A comprehensive study on designing power-efficient memory controllers specifically optimized for edge computing scenarios, focusing on reducing power consumption without compromising performance.",
-    keywords: ["Memory Design", "Edge Computing", "Low Power", "VLSI"],
+    description: "An open-access paper on the technology of the Neely 33 Smart Shoe, exploring innovative approaches to bio-mechanical sensing through intelligent wearable technology with integrated pressure sensors and real-time data processing capabilities.",
+    keywords: ["Wearable Technology", "Bio-mechanical Sensing", "Smart Shoes", "Pervasive Computing", "Sensor Fusion"],
     link: "#"
   }
 ];
@@ -108,13 +108,15 @@ const Publications = () => {
                   <Award className="w-4 h-4 mr-1 text-accent" />
                   Peer Reviewed
                 </div>
-                <button 
-                  onClick={() => window.open(publication.link, "_blank")}
-                  className="inline-flex items-center text-sm text-primary hover:text-primary-hover font-medium transition-colors"
-                >
-                  View Paper
-                  <ExternalLink className="w-4 h-4 ml-1" />
-                </button>
+                {publication.status === 'Published' && (
+                  <button 
+                    onClick={() => window.open(publication.link, "_blank")}
+                    className="inline-flex items-center text-sm text-primary hover:text-primary-hover font-medium transition-colors"
+                  >
+                    View Paper
+                    <ExternalLink className="w-4 h-4 ml-1" />
+                  </button>
+                )}
               </div>
             </Card>
           ))}
