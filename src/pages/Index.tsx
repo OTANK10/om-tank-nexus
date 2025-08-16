@@ -95,7 +95,7 @@ const experienceData = [
     location: "Gujarat, India (Remote)",
     period: "Jan '21 - Jun '21",
     type: "Professional",
-    companyIcon: null,
+    companyIcon: "/lovable-uploads/24d4654e-0ca1-482e-8d06-92fe1b554be3.png",
     description: "First professional experience during COVID-19 pandemic. Developed web applications and software solutions during early college years, gaining foundational experience in software development lifecycle.",
     achievements: [
       "Developed web applications and software solutions during early college years",
