@@ -5,39 +5,6 @@ import { Code, Microchip, Brain, Smartphone, Zap, Cpu, ExternalLink, Github, Glo
 
 const projectsData = [
   {
-    id: 1,
-    title: "Neely 33 Smart Shoe",
-    icon: <Smartphone className="w-6 h-6" />,
-    category: "Wearable Tech",
-    description: "Intelligent wearable technology with integrated pressure sensors, IMUs, and Nordic nRF52840 MCU for gesture-based control. Features real-time sensor fusion with 12ms BLE latency.",
-    highlights: [
-      "16-hour continuous operation",
-      "Custom flexible PCB design", 
-      "Real-time sensor fusion (12ms BLE latency)",
-      "Paper under review: IEEE Pervasive Computing"
-    ],
-    technologies: ["C++", "Nordic nRF52840", "BLE", "PCB Design", "Sensor Fusion"],
-    status: "In Development",
-    image: "/lovable-uploads/a232041e-989c-483e-929a-627c1ad71490.png",
-    websiteUrl: "https://neelyanddaughters.com/portfolio-posts/neely-air-freestyle/"
-  },
-  {
-    id: 2,
-    title: "Tyre - Student Rideshare Platform",
-    icon: <Smartphone className="w-6 h-6" />,
-    category: "Startup",
-    description: "Co-founded YC startup creating rideshare platform specifically for students. Reached YC incubator interview round and was invited to YC East Startup School.",
-    highlights: [
-      "Invited to YC East Startup School",
-      "Reached YC incubator interview round",
-      "Student-focused rideshare solution",
-      "Cross-platform mobile application"
-    ],
-    technologies: ["Mobile Development", "Platform Design", "Business Strategy", "User Experience"],
-    status: "YC Interview Stage",
-    image: "/lovable-uploads/f6fab023-9a50-4a7f-bc28-9a15ff35cbda.png"
-  },
-  {
     id: 3,
     title: "GNN based Circuit Timing Prediction for VLSI Design",
     icon: <Brain className="w-6 h-6" />,
@@ -164,6 +131,39 @@ const projectsData = [
     technologies: ["Jupyter Notebooks", "Python", "Data Science", "Federated Learning"],
     status: "Fall 23",
     image: "/api/placeholder/400/300"
+  },
+  {
+    id: 1,
+    title: "Neely 33 Smart Shoe",
+    icon: <Smartphone className="w-6 h-6" />,
+    category: "Wearable Tech",
+    description: "Intelligent wearable technology with integrated pressure sensors, IMUs, and Nordic nRF52840 MCU for gesture-based control. Features real-time sensor fusion with 12ms BLE latency.",
+    highlights: [
+      "16-hour continuous operation",
+      "Custom flexible PCB design", 
+      "Real-time sensor fusion (12ms BLE latency)",
+      "Paper under review: IEEE Pervasive Computing"
+    ],
+    technologies: ["C++", "Nordic nRF52840", "BLE", "PCB Design", "Sensor Fusion"],
+    status: "In Development",
+    image: "/lovable-uploads/e50bbb0f-e070-4e3e-a30b-afff4b12738d.png",
+    websiteUrl: "https://neelyanddaughters.com/portfolio-posts/neely-air-freestyle/"
+  },
+  {
+    id: 2,
+    title: "Tyre - Student Rideshare Platform",
+    icon: <Smartphone className="w-6 h-6" />,
+    category: "Startup",
+    description: "Co-founded YC startup creating rideshare platform specifically for students. Reached YC incubator interview round and was invited to YC East Startup School.",
+    highlights: [
+      "Invited to YC East Startup School",
+      "Reached YC incubator interview round",
+      "Student-focused rideshare solution",
+      "Cross-platform mobile application"
+    ],
+    technologies: ["Mobile Development", "Platform Design", "Business Strategy", "User Experience"],
+    status: "YC Interview Stage",
+    image: "/lovable-uploads/f6fab023-9a50-4a7f-bc28-9a15ff35cbda.png"
   }
 ];
 
@@ -311,6 +311,8 @@ const Projects = () => {
                       <Globe className="w-4 h-4 mr-2" />
                       Website
                     </Button>
+                  ) : project.title === "Tyre - Student Rideshare Platform" ? (
+                    <div className="flex-1"></div>
                   ) : (
                     <Button variant="outline" size="sm" className="flex-1">
                       <Github className="w-4 h-4 mr-2" />
