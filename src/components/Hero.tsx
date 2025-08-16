@@ -68,6 +68,12 @@ const Hero = () => {
             variant="tech" 
             size="lg"
             className="w-full sm:w-auto"
+            onClick={() => {
+              const link = document.createElement('a');
+              link.href = '/Om_Tank_CV.pdf';
+              link.download = 'Om_Tank_CV.pdf';
+              link.click();
+            }}
           >
             <Download className="mr-2" />
             Download CV
