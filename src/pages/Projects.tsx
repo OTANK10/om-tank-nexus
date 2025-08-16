@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/enhanced-button";
-import { Code, Microchip, Brain, Smartphone, Zap, Cpu, ExternalLink, Github } from "lucide-react";
+import { Code, Microchip, Brain, Smartphone, Zap, Cpu, ExternalLink, Github, Globe } from "lucide-react";
 
 const projectsData = [
   {
@@ -18,7 +18,8 @@ const projectsData = [
     ],
     technologies: ["C++", "Nordic nRF52840", "BLE", "PCB Design", "Sensor Fusion"],
     status: "In Development",
-    image: "/lovable-uploads/92b24c52-5193-4847-a4c9-a8379f244495.png"
+    image: "/lovable-uploads/a232041e-989c-483e-929a-627c1ad71490.png",
+    websiteUrl: "https://neelyanddaughters.com/portfolio-posts/neely-air-freestyle/"
   },
   {
     id: 2,
@@ -300,10 +301,22 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="flex-1">
-                    <Github className="w-4 h-4 mr-2" />
-                    Show on GitHub
-                  </Button>
+                  {project.websiteUrl ? (
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex-1"
+                      onClick={() => window.open(project.websiteUrl, '_blank')}
+                    >
+                      <Globe className="w-4 h-4 mr-2" />
+                      Website
+                    </Button>
+                  ) : (
+                    <Button variant="outline" size="sm" className="flex-1">
+                      <Github className="w-4 h-4 mr-2" />
+                      Show on GitHub
+                    </Button>
+                  )}
                 </div>
               </div>
             </Card>
