@@ -1,7 +1,8 @@
 import Hero from "@/components/Hero";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, MapPin, Award } from "lucide-react";
+import { Calendar, MapPin, Award, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const experienceData = [
   {
@@ -254,6 +255,28 @@ const Index = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Navigation Arrow to Projects */}
+      <div className="py-12 px-4 sm:px-6 lg:px-8 bg-muted/20">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="animate-fade-in">
+            <h3 className="text-2xl font-bold mb-4">
+              Explore My <span className="gradient-text">Projects</span>
+            </h3>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Discover the innovative projects and research initiatives that showcase 
+              my technical expertise and creative problem-solving abilities.
+            </p>
+            <Link 
+              to="/projects"
+              className="inline-flex items-center px-6 py-3 bg-accent hover:bg-accent/90 text-accent-foreground rounded-lg font-medium transition-all duration-300 hover:scale-105 shadow-medium hover:shadow-strong"
+            >
+              View Projects
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Link>
           </div>
         </div>
       </div>
