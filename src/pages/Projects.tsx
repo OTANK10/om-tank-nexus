@@ -137,7 +137,8 @@ const projectsData = [
     ],
     technologies: ["Jupyter Notebooks", "Python", "Data Science", "Federated Learning"],
     status: "Fall 23",
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/Federated-Learning-on-Heterogeneous-Sensors"
   },
   {
     id: 1,
