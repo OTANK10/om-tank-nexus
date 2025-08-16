@@ -5,38 +5,21 @@ import { Code, Microchip, Brain, Smartphone, Zap, Cpu, ExternalLink, Github, Glo
 
 const projectsData = [
   {
-    id: 12,
-    title: "Cache Performance Analysis: Sorting Algorithms Under Different Memory Hierarchies",
-    icon: <Cpu className="w-6 h-6" />,
-    category: "Hardware",
-    description: "In-depth analysis of cache performance for Quicksort and Radix Sort algorithms using Valgrind's Cachegrind tool, examining how cache organization parameters impact algorithm performance across varying data sizes.",
-    highlights: [
-      "Comparative analysis of Quicksort vs Radix Sort cache behavior",
-      "Valgrind Cachegrind tool implementation",
-      "Memory hierarchy optimization study",
-      "Cache miss rate and access pattern analysis"
-    ],
-    technologies: ["C", "Valgrind", "Cachegrind", "Performance Analysis", "CPU Architecture"],
-    status: "Present",
-    image: "/api/placeholder/400/300",
-    githubUrl: "https://github.com/OTANK10/cache-performance"
-  },
-  {
-    id: 11,
-    title: "Edge Computing: Research Challenges and Future Directions",
+    id: 13,
+    title: "BLAST Device Characterization and Testing",
     icon: <Brain className="w-6 h-6" />,
     category: "Research",
-    description: "A commentary on the current paradigm of edge computing, examining core challenges including efficient resource management, real-time task processing, and adaptive system control in resource-constrained environments.",
+    description: "Research work on BLAST (Biocompatible biLayer graphene-based Artificial Synaptic Transistor) devices - a breakthrough in neuromorphic computing that mimics brain synapses using graphene and Nafion materials.",
     highlights: [
-      "Comprehensive literature review of 5 major edge computing papers",
-      "Critical analysis of current approaches and limitations",
-      "Future directions focusing on AI integration and energy efficiency",
-      "Published via UMass College of Engineering"
+      "Biocompatible neuromorphic device development",
+      "Graphene and Nafion material integration",
+      "Synaptic behavior analysis and LTP/metaplasticity testing",
+      "Electrical characterization using Agilent/Keysight SMUs"
     ],
-    technologies: ["Edge Computing", "IoT", "Resource Management", "Real-time Systems"],
-    status: "Published",
+    technologies: ["Neuromorphic Computing", "Graphene", "Nafion", "Electrical Testing", "Synaptic Devices"],
+    status: "Present",
     image: "/api/placeholder/400/300",
-    githubUrl: "https://github.com/OTANK10/Edge-Computing"
+    githubUrl: "https://github.com/OTANK10/Silicon-alternate-tech"
   },
   {
     id: 3,
@@ -124,21 +107,38 @@ const projectsData = [
     githubUrl: "https://github.com/OTANK10/HardwareTrojan"
   },
   {
-    id: 8,
-    title: "BananAI - Detection of Anthracnose Infected Banana Cells using AI",
-    icon: <Brain className="w-6 h-6" />,
-    category: "AI/ML",
-    description: "Architected machine learning pipeline utilizing Meta's Segment Anything Model (SAM) for automated lesion segmentation in plant pathology.",
+    id: 12,
+    title: "Cache Performance Analysis: Sorting Algorithms Under Different Memory Hierarchies",
+    icon: <Cpu className="w-6 h-6" />,
+    category: "Hardware",
+    description: "In-depth analysis of cache performance for Quicksort and Radix Sort algorithms using Valgrind's Cachegrind tool, examining how cache organization parameters impact algorithm performance across varying data sizes.",
     highlights: [
-      "Meta's SAM integration",
-      "Automated lesion segmentation",
-      "Plant pathology application",
-      "Machine learning pipeline architecture"
+      "Comparative analysis of Quicksort vs Radix Sort cache behavior",
+      "Valgrind Cachegrind tool implementation",
+      "Memory hierarchy optimization study",
+      "Cache miss rate and access pattern analysis"
     ],
-    technologies: ["Python", "Tensorflow", "Meta's SAM", "Computer Vision"],
+    technologies: ["C", "Valgrind", "Cachegrind", "Performance Analysis", "CPU Architecture"],
+    status: "Fall 24",
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/cache-performance"
+  },
+  {
+    id: 11,
+    title: "Edge Computing: Research Challenges and Future Directions",
+    icon: <Brain className="w-6 h-6" />,
+    category: "Research",
+    description: "A commentary on the current paradigm of edge computing, examining core challenges including efficient resource management, real-time task processing, and adaptive system control in resource-constrained environments.",
+    highlights: [
+      "Comprehensive literature review of 5 major edge computing papers",
+      "Critical analysis of current approaches and limitations",
+      "Future directions focusing on AI integration and energy efficiency",
+      "Published via UMass College of Engineering"
+    ],
+    technologies: ["Edge Computing", "IoT", "Resource Management", "Real-time Systems"],
     status: "Spring 24",
     image: "/api/placeholder/400/300",
-    githubUrl: "https://github.com/OTANK10/BananAI"
+    githubUrl: "https://github.com/OTANK10/Edge-Computing"
   },
   {
     id: 9,
@@ -226,6 +226,7 @@ const statusColors = {
   "June 25": "bg-blue-500/10 text-blue-700 border-blue-200",
   "Spring 25": "bg-cyan-500/10 text-cyan-700 border-cyan-200",
   "Winter 25": "bg-slate-500/10 text-slate-700 border-slate-200",
+  "Fall 24": "bg-purple-500/10 text-purple-700 border-purple-200",
   "Summer 24": "bg-pink-500/10 text-pink-700 border-pink-200",
   "Spring 24": "bg-lime-500/10 text-lime-700 border-lime-200",
   "Fall 23": "bg-amber-500/10 text-amber-700 border-amber-200"
