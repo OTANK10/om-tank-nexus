@@ -1,26 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/enhanced-button";
-import { Code, Microchip, Brain, Smartphone, Zap, Cpu, ExternalLink, Github, Globe } from "lucide-react";
+import { Code, Microchip, Brain, Smartphone, Zap, Cpu, ExternalLink, Github, Globe, ArrowRight } from "lucide-react";
 
 const projectsData = [
-  {
-    id: 13,
-    title: "BLAST Device Characterization and Testing",
-    icon: <Brain className="w-6 h-6" />,
-    category: "Research",
-    description: "Research work on BLAST (Biocompatible biLayer graphene-based Artificial Synaptic Transistor) devices - a breakthrough in neuromorphic computing that mimics brain synapses using graphene and Nafion materials.",
-    highlights: [
-      "Biocompatible neuromorphic device development",
-      "Graphene and Nafion material integration",
-      "Synaptic behavior analysis and LTP/metaplasticity testing",
-      "Electrical characterization using Agilent/Keysight SMUs"
-    ],
-    technologies: ["Neuromorphic Computing", "Graphene", "Nafion", "Electrical Testing", "Synaptic Devices"],
-    status: "Present",
-    image: "/api/placeholder/400/300",
-    githubUrl: "https://github.com/OTANK10/Silicon-alternate-tech"
-  },
   {
     id: 3,
     title: "GNN based Circuit Timing Prediction for VLSI Design",
@@ -141,6 +124,23 @@ const projectsData = [
     githubUrl: "https://github.com/OTANK10/Edge-Computing"
   },
   {
+    id: 8,
+    title: "BananAI - Detection of Anthracnose Infected Banana Cells using AI",
+    icon: <Brain className="w-6 h-6" />,
+    category: "AI/ML",
+    description: "Architected machine learning pipeline utilizing Meta's Segment Anything Model (SAM) for automated lesion segmentation in plant pathology.",
+    highlights: [
+      "Meta's SAM integration",
+      "Automated lesion segmentation",
+      "Plant pathology application",
+      "Machine learning pipeline architecture"
+    ],
+    technologies: ["Python", "Tensorflow", "Meta's SAM", "Computer Vision"],
+    status: "Spring 24",
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/BananAI"
+  },
+  {
     id: 9,
     title: "Analog Circuits Design for Random Number Generation",
     icon: <Microchip className="w-6 h-6" />,
@@ -156,6 +156,23 @@ const projectsData = [
     status: "Fall 23",
     image: "/api/placeholder/400/300",
     githubUrl: "https://github.com/OTANK10/Random-Number-Generation"
+  },
+  {
+    id: 13,
+    title: "BLAST Device Characterization and Testing",
+    icon: <Brain className="w-6 h-6" />,
+    category: "Research",
+    description: "Research work on BLAST (Biocompatible biLayer graphene-based Artificial Synaptic Transistor) devices - a breakthrough in neuromorphic computing that mimics brain synapses using graphene and Nafion materials.",
+    highlights: [
+      "Biocompatible neuromorphic device development",
+      "Graphene and Nafion material integration",
+      "Synaptic behavior analysis and LTP/metaplasticity testing",
+      "Electrical characterization using Agilent/Keysight SMUs"
+    ],
+    technologies: ["Neuromorphic Computing", "Graphene", "Nafion", "Electrical Testing", "Synaptic Devices"],
+    status: "Fall 23",
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/Silicon-alternate-tech"
   },
   {
     id: 10,
@@ -374,29 +391,17 @@ const Projects = () => {
           ))}
         </div>
 
-        {/* Project Statistics */}
-        <div className="mt-16 animate-fade-in">
-          <Card className="p-8 bg-gradient-to-r from-accent/5 to-primary/5 border border-accent/20">
-            <h3 className="text-2xl font-bold text-center mb-6">Project Impact</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">10+</div>
-                <div className="text-sm text-muted-foreground">Major Projects</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">3</div>
-                <div className="text-sm text-muted-foreground">Published Papers</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-tech-orange mb-2">30%</div>
-                <div className="text-sm text-muted-foreground">Performance Improvements</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">1</div>
-                <div className="text-sm text-muted-foreground">YC Startup</div>
-              </div>
-            </div>
-          </Card>
+        {/* Navigation to Publications */}
+        <div className="mt-16 text-center animate-fade-in">
+          <Button 
+            variant="outline" 
+            size="lg"
+            onClick={() => window.location.href = '/publications'}
+            className="group hover:bg-accent hover:text-accent-foreground transition-colors duration-300"
+          >
+            View Publications
+            <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform duration-300" />
+          </Button>
         </div>
       </div>
     </div>
