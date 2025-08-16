@@ -103,7 +103,8 @@ const projectsData = [
     ],
     technologies: ["Python", "Tensorflow", "Meta's SAM", "Computer Vision"],
     status: "Spring 24",
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/BananAI"
   },
   {
     id: 9,
