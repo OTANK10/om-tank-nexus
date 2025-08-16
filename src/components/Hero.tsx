@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/enhanced-button";
-import { Github, Linkedin, Download } from "lucide-react";
+import { Github, Linkedin, Download, ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -78,6 +78,27 @@ const Hero = () => {
             <Download className="mr-2" />
             Download CV
           </Button>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <button 
+            onClick={() => {
+              const experienceSection = document.querySelector('[data-section="experience"]');
+              if (experienceSection) {
+                experienceSection.scrollIntoView({ behavior: 'smooth' });
+              }
+            }}
+            className="group flex flex-col items-center text-muted-foreground hover:text-primary transition-colors duration-300"
+            aria-label="Scroll to experience section"
+          >
+            <span className="text-sm font-medium mb-2 opacity-80 group-hover:opacity-100 transition-opacity">
+              See Experience
+            </span>
+            <div className="w-8 h-8 rounded-full border-2 border-current flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+              <ChevronDown className="w-4 h-4 animate-pulse" />
+            </div>
+          </button>
         </div>
 
       </div>
