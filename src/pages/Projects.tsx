@@ -18,7 +18,7 @@ const projectsData = [
     ],
     technologies: ["PyTorch", "Python", "NetworkX", "Graph Neural Networks"],
     status: "Present",
-    image: "/lovable-uploads/4074fb03-061f-4553-8dec-868e35d677fe.png",
+    image: "/api/placeholder/400/300",
     githubUrl: "https://github.com/OTANK10/GNN-Circuit-Timing-Prediction"
   },
   {
