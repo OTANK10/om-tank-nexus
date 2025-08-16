@@ -27,7 +27,7 @@ const experienceData = [
     location: "New York, NY (Remote)",
     period: "Fall '24 - Summer '25",
     type: "Academic",
-    companyIcon: null,
+    companyIcon: "/lovable-uploads/92b24c52-5193-4847-a4c9-a8379f244495.png",
     description: "Leading cross-functional team developing intelligent wearable technology. Led team of 4 engineers developing Neely 33 Smart Shoe with integrated pressure sensors, IMUs, and Nordic nRF52840 MCU for gesture-based control.",
     achievements: [
       "Led team of 4 engineers developing Neely 33 Smart Shoe",
@@ -44,7 +44,7 @@ const experienceData = [
     location: "Boxborough, MA",
     period: "Summer '24",
     type: "Internship",
-    companyIcon: null,
+    companyIcon: "/lovable-uploads/7b7ab3a5-2e6c-4b1d-bb5b-5272972a273c.png",
     description: "Optimizing next-generation ZEN microprocessor designs. Optimized gate-level designs for ZEN microprocessor cores, reducing area utilization and built modular UVM-based testbench components.",
     achievements: [
       "Optimized gate-level designs for ZEN microprocessor cores, reducing area utilization",
@@ -167,7 +167,9 @@ const Index = () => {
                             <img 
                               src={item.companyIcon} 
                               alt={`${item.company} logo`}
-                              className="w-6 h-6 mr-2 rounded-sm object-contain"
+                              className={`mr-2 rounded-sm object-contain ${
+                                item.company.includes('Neely') ? 'w-8 h-4' : 'w-6 h-6'
+                              }`}
                             />
                           )}
                           {item.company}
