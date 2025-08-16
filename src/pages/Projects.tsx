@@ -69,7 +69,8 @@ const projectsData = [
     ],
     technologies: ["Verilog", "RTL Design", "FPGA", "ARM Cortex-A9"],
     status: "Winter 25",
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/FIR-Filter-FPGA-Implementation"
   },
   {
     id: 7,
