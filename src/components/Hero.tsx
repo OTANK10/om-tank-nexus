@@ -1,0 +1,86 @@
+import { Button } from "@/components/ui/enhanced-button";
+import { Github, Linkedin, Download } from "lucide-react";
+
+const Hero = () => {
+  return (
+    <section className="min-h-screen flex items-center justify-center relative circuit-bg">
+      {/* Background Pattern */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+      </div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        {/* Profile Image */}
+        <div className="mb-8 animate-fade-in">
+          <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-glow">
+            <div className="w-full h-full rounded-full bg-muted flex items-center justify-center text-6xl font-bold text-muted-foreground">
+              OT
+            </div>
+          </div>
+        </div>
+
+        {/* Main Heading */}
+        <div className="mb-6 animate-slide-in-left">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+            Hi, I'm <span className="gradient-text">Om Tank</span>
+          </h1>
+          <h2 className="text-xl md:text-2xl text-muted-foreground font-medium">
+            Computer Engineering Graduate | VLSI Design | AI-Hardware Co-optimization
+          </h2>
+        </div>
+
+        {/* Elevator Pitch */}
+        <div className="mb-8 animate-slide-in-right">
+          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Passionate about bridging the gap between hardware and software through innovative 
+            <span className="text-accent font-medium"> VLSI design</span> and 
+            <span className="text-primary font-medium"> AI-hardware optimization</span>. 
+            Committed to community leadership and driving technological advancement.
+          </p>
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-scale-in">
+          <Button 
+            variant="hero" 
+            size="lg"
+            className="w-full sm:w-auto"
+            onClick={() => window.open("https://linkedin.com", "_blank")}
+          >
+            <Linkedin className="mr-2" />
+            LinkedIn
+          </Button>
+          
+          <Button 
+            variant="glow" 
+            size="lg"
+            className="w-full sm:w-auto"
+            onClick={() => window.open("https://github.com", "_blank")}
+          >
+            <Github className="mr-2" />
+            GitHub
+          </Button>
+          
+          <Button 
+            variant="tech" 
+            size="lg"
+            className="w-full sm:w-auto"
+          >
+            <Download className="mr-2" />
+            Download CV
+          </Button>
+        </div>
+
+        {/* Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-muted-foreground rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-muted-foreground rounded-full mt-2 animate-pulse" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
