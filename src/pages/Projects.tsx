@@ -120,7 +120,8 @@ const projectsData = [
     ],
     technologies: ["Verilog", "VHDL", "SPICE", "Quartus Prime"],
     status: "Fall 23",
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/Random-Number-Generation"
   },
   {
     id: 10,
