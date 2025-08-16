@@ -22,6 +22,30 @@ const experienceData = [
   },
   {
     id: 2,
+    title: "Staff IT Support",
+    company: "Centre for Agriculture Food and Environment, UMass Amherst",
+    location: "Amherst, MA",
+    period: "Spring '25",
+    type: "Academic",
+    companyIcon: "/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png",
+    description: "Providing technical support and IT infrastructure management for agricultural research initiatives.",
+    achievements: ["Technical support for agricultural research computing infrastructure"],
+    technologies: ["IT Support", "Infrastructure Management"]
+  },
+  {
+    id: 3,
+    title: "Makerspace Hardware Engineer",
+    company: "M5 Makerspace, UMass Amherst",
+    location: "Amherst, MA", 
+    period: "Fall '24",
+    type: "Academic",
+    companyIcon: "/lovable-uploads/7f3d2ffd-78a2-415b-8ae0-083eea674d9f.png",
+    description: "Hardware engineering and prototyping support in university makerspace environment.",
+    achievements: ["Hardware prototyping and engineering support for student projects"],
+    technologies: ["Hardware Engineering", "Prototyping", "Makerspace Tools"]
+  },
+  {
+    id: 4,
     title: "Senior Design Project Lead",
     company: "Neely & Daughters (Client Project)",
     location: "New York, NY (Remote)",
@@ -38,7 +62,7 @@ const experienceData = [
     technologies: ["C++", "Nordic nRF52840", "BLE", "PCB Design", "Sensor Fusion"]
   },
   {
-    id: 3,
+    id: 5,
     title: "Logic/Design Verification Intern",
     company: "Advanced Micro Devices (AMD)",
     location: "Boxborough, MA",
@@ -55,7 +79,19 @@ const experienceData = [
     technologies: ["SystemVerilog", "UVM", "Python", "Logic Minimization", "PAT Analysis"]
   },
   {
-    id: 4,
+    id: 6,
+    title: "Co-Founder",
+    company: "Tyre - YC Startup",
+    location: "Remote",
+    period: "Spring '24",
+    type: "Startup",
+    companyIcon: "/lovable-uploads/f6fab023-9a50-4a7f-bc28-9a15ff35cbda.png",
+    description: "Co-founded rideshare platform for students. Invited to YC East Startup School and reached YC incubator interview round.",
+    achievements: ["Invited to YC East Startup School", "Reached YC incubator interview round"],
+    technologies: ["Startup Development", "Platform Design", "Business Strategy"]
+  },
+  {
+    id: 7,
     title: "Neuromorphic Computing Researcher",
     company: "Bio-Medical Engineering Lab, UMass Amherst",
     location: "Amherst, MA",
@@ -72,7 +108,7 @@ const experienceData = [
     technologies: ["Analog Circuit Design", "SPICE", "Keysight Tools", "Power Analysis"]
   },
   {
-    id: 5,
+    id: 8,
     title: "Embedded Systems Engineering Intern",
     company: "Core Summer Internships, UMass Amherst",
     location: "Amherst, MA",
@@ -89,7 +125,7 @@ const experienceData = [
     technologies: ["Embedded C", "Signal Processing", "EMG Sensors", "Motor Control"]
   },
   {
-    id: 6,
+    id: 9,
     title: "Software Engineer",
     company: "Axaram Codelabs",
     location: "Gujarat, India (Remote)",
