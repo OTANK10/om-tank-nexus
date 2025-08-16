@@ -5,14 +5,14 @@ import { BookOpen, FileText, Award, ExternalLink } from "lucide-react";
 const publicationsData = [
   {
     id: 1,
-    title: "AI-Hardware Co-optimization for Energy-Efficient Neural Network Accelerators",
-    authors: "Om Tank, Dr. Smith, Dr. Johnson",
-    venue: "IEEE International Conference on Computer Design (ICCD)",
-    year: "2024",
-    type: "Conference Paper",
+    title: "Squishy bioelectronic circuits",
+    authors: "Alexandra Katsoulakis, Favour Nakyazze, Max Mchugh, Monil Bhavsar, Om Tank, Dmitry Kireev",
+    venue: "Cellpress Devices",
+    year: "2025",
+    type: "Journal Paper",
     status: "Published",
-    description: "This paper presents a novel approach to co-optimizing AI algorithms and hardware architectures for neural network accelerators, achieving 35% improvement in energy efficiency while maintaining accuracy.",
-    keywords: ["VLSI Design", "Neural Networks", "Hardware Acceleration", "AI Optimization"],
+    description: "This study introduces Squishy Circuits (SCs) as a promising low-cost biointerface electrode material for electrophysiological applications. SCs exhibit self-healing properties and show normalized impedance of 3.4 ± 0.6 kΩ at 1 kHz, which is 4 times lower than copper and 10 times lower than Ag/AgCl gel electrodes, with signal-to-noise ratios up to 115.",
+    keywords: ["Bioelectronics", "Wearable Technology", "Electrophysiology", "Low-cost Sensors", "Self-healing Materials"],
     link: "#"
   },
   {
