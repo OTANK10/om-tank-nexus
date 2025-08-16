@@ -52,7 +52,8 @@ const projectsData = [
     ],
     technologies: ["SystemVerilog", "UVM testbench", "Verification"],
     status: "Spring 25",
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/UVM"
   },
   {
     id: 6,
