@@ -14,18 +14,20 @@ const Hero = () => {
         {/* Profile Image */}
         <div className="mb-8 animate-fade-in">
           <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-glow">
-            <div className="w-full h-full rounded-full bg-muted flex items-center justify-center text-6xl font-bold text-muted-foreground">
-              OT
-            </div>
+            <img 
+              src="/lovable-uploads/4e0ac380-d36e-4687-a1d0-67d21723ebef.png" 
+              alt="Om Tank - Computer Engineering Graduate"
+              className="w-full h-full rounded-full object-cover"
+            />
           </div>
         </div>
 
         {/* Main Heading */}
         <div className="mb-6 animate-slide-in-left">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            Hi, I'm <span className="gradient-text">Om Tank</span>
+            Hi, I'm <span className="gradient-text">Om</span>
           </h1>
-          <h2 className="text-xl md:text-2xl text-muted-foreground font-medium">
+          <h2 className="text-xl md:text-2xl text-muted-foreground font-medium whitespace-nowrap">
             Computer Engineering Graduate | VLSI Design | AI-Hardware Co-optimization
           </h2>
         </div>
@@ -46,7 +48,7 @@ const Hero = () => {
             variant="hero" 
             size="lg"
             className="w-full sm:w-auto"
-            onClick={() => window.open("https://linkedin.com", "_blank")}
+            onClick={() => window.open("https://www.linkedin.com/in/omtank/", "_blank")}
           >
             <Linkedin className="mr-2" />
             LinkedIn
@@ -56,7 +58,7 @@ const Hero = () => {
             variant="glow" 
             size="lg"
             className="w-full sm:w-auto"
-            onClick={() => window.open("https://github.com", "_blank")}
+            onClick={() => window.open("https://github.com/OTANK10", "_blank")}
           >
             <Github className="mr-2" />
             GitHub
