@@ -127,11 +127,12 @@ const Publications = () => {
           <Card className="p-6 bg-muted/50 border border-border/30">
             <div className="flex items-center justify-center mb-3">
               <BookOpen className="w-6 h-6 text-accent mr-2" />
-              <h3 className="text-lg font-semibold">Research Focus Areas</h3>
+              <h3 className="text-lg font-semibold">Future Research Interests</h3>
             </div>
             <p className="text-muted-foreground mb-4">
-              My research primarily focuses on the intersection of hardware and software optimization, 
-              with particular emphasis on VLSI design, neural network acceleration, and energy-efficient computing systems.
+              My future research aims to explore new frontiers in VLSI and IC development by leveraging artificial intelligence 
+              to revolutionize chip design methodologies, optimize circuit performance, and accelerate the development of 
+              next-generation computing architectures for emerging applications.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
               {["VLSI Design", "AI Hardware", "Low Power Computing", "Memory Systems", "Edge Computing"].map((area, idx) => (
