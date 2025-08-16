@@ -35,7 +35,8 @@ const projectsData = [
     ],
     technologies: ["CUDA", "Verilog", "GPU Computing", "RTL Design"],
     status: "June 25",
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/GEM-Nvidia-RTL-SIM"
   },
   {
     id: 5,
