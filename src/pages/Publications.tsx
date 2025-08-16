@@ -13,7 +13,7 @@ const publicationsData = [
     status: "Published",
     description: "This study introduces Squishy Circuits (SCs) as a promising low-cost biointerface electrode material for electrophysiological applications. SCs exhibit self-healing properties and show normalized impedance of 3.4 ± 0.6 kΩ at 1 kHz, which is 4 times lower than copper and 10 times lower than Ag/AgCl gel electrodes, with signal-to-noise ratios up to 115.",
     keywords: ["Bioelectronics", "Wearable Technology", "Electrophysiology", "Low-cost Sensors", "Self-healing Materials"],
-    link: "#"
+    link: "https://www.cell.com/device/fulltext/S2666-9986(24)00475-7"
   },
   {
     id: 2,
