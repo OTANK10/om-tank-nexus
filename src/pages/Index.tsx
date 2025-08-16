@@ -6,63 +6,98 @@ import { Calendar, MapPin, Award } from "lucide-react";
 const experienceData = [
   {
     id: 1,
-    title: "Research Assistant",
-    company: "University VLSI Lab",
-    location: "University Campus",
-    period: "Jan 2024 - Present",
+    title: "AI Program Manager",
+    company: "College of Natural Sciences - iCons, UMass Amherst",
+    location: "Amherst, MA",
+    period: "Present",
     type: "Research",
-    description: "Leading research in AI-hardware co-optimization for neural network accelerators. Developed novel architectural designs that improved inference speed by 35% while reducing power consumption.",
+    description: "Leading AI integration across research labs. Facilitating identification and integration of AI agents across diverse research labs, streamlining workflows and developing AI-aware educational curriculum.",
     achievements: [
-      "Published 2 papers in top-tier conferences",
-      "Reduced power consumption by 35%",
-      "Mentored 3 undergraduate students"
+      "Facilitate identification and integration of AI agents across diverse research labs",
+      "Streamlining workflows and developing AI-aware educational curriculum",
+      "Developing new educational track: 'AI and the Future of Work'"
     ],
-    technologies: ["Verilog", "SystemVerilog", "Python", "TensorFlow", "Cadence"]
+    technologies: ["AI/ML tools", "Educational technology", "Research coordination"]
   },
   {
     id: 2,
-    title: "VLSI Design Intern",
-    company: "TechCorp Semiconductors",
-    location: "Silicon Valley, CA",
-    period: "Jun 2023 - Aug 2023",
-    type: "Internship",
-    description: "Worked on digital circuit design and verification for next-generation processors. Contributed to the development of low-power memory controllers.",
+    title: "Senior Design Project Lead",
+    company: "Neely & Daughters (Client Project)",
+    location: "New York, NY (Remote)",
+    period: "Fall '24 - Summer '25",
+    type: "Academic",
+    description: "Leading cross-functional team developing intelligent wearable technology. Led team of 4 engineers developing Neely 33 Smart Shoe with integrated pressure sensors, IMUs, and Nordic nRF52840 MCU for gesture-based control.",
     achievements: [
-      "Optimized memory controller design",
-      "Reduced verification time by 25%",
-      "Received outstanding intern award"
+      "Led team of 4 engineers developing Neely 33 Smart Shoe",
+      "Architected embedded C++ firmware with real-time sensor fusion (12ms BLE latency)",
+      "Designed custom flexible PCB with 16-hour continuous operation",
+      "Paper under review: 'Smart Shoes - First Steps in Bio-Mechanical Sensing' (IEEE Pervasive Computing)"
     ],
-    technologies: ["VHDL", "ModelSim", "Synopsys", "MATLAB", "C++"]
+    technologies: ["C++", "Nordic nRF52840", "BLE", "PCB Design", "Sensor Fusion"]
   },
   {
     id: 3,
-    title: "Teaching Assistant",
-    company: "Computer Engineering Department",
-    location: "University Campus",
-    period: "Sep 2022 - Dec 2023",
-    type: "Academic",
-    description: "Assisted in teaching Digital Logic Design and Computer Architecture courses. Conducted lab sessions for 120+ students and developed new learning materials.",
+    title: "Logic/Design Verification Intern",
+    company: "Advanced Micro Devices (AMD)",
+    location: "Boxborough, MA",
+    period: "Summer '24",
+    type: "Internship",
+    description: "Optimizing next-generation ZEN microprocessor designs. Optimized gate-level designs for ZEN microprocessor cores, reducing area utilization and built modular UVM-based testbench components.",
     achievements: [
-      "Improved student satisfaction by 40%",
-      "Developed 5 new lab experiments",
-      "Mentored 50+ students"
+      "Optimized gate-level designs for ZEN microprocessor cores, reducing area utilization",
+      "Built modular UVM-based testbench components and assertions",
+      "Automated design verification processes, reducing testing cycle time by 30%",
+      "Cross-functional collaboration with RTL, DFT, and P&R teams for PAT compliance"
     ],
-    technologies: ["Digital Logic", "Computer Architecture", "Assembly", "FPGA"]
+    technologies: ["SystemVerilog", "UVM", "Python", "Logic Minimization", "PAT Analysis"]
   },
   {
     id: 4,
-    title: "Hardware Engineering Intern",
-    company: "StartupTech Innovations",
-    location: "Austin, TX",
-    period: "May 2022 - Aug 2022",
-    type: "Internship",
-    description: "Designed and implemented embedded systems for IoT applications. Focused on low-power design and wireless communication protocols.",
+    title: "Neuromorphic Computing Researcher",
+    company: "Bio-Medical Engineering Lab, UMass Amherst",
+    location: "Amherst, MA",
+    period: "Fall '23",
+    type: "Research",
+    description: "Exploring non-silicon alternatives for next-generation computing. Designed analog circuits on Nafion wafers for VLSI alternatives and achieved 12% power efficiency improvement through signal integrity analysis.",
     achievements: [
-      "Developed 3 IoT prototypes",
-      "Implemented power-saving algorithms",
-      "Filed 1 provisional patent"
+      "Designed analog circuits on Nafion wafers for VLSI alternatives",
+      "Achieved 12% power efficiency improvement through signal integrity analysis",
+      "Tested circuits with Keysight Agilent oscilloscopes and logic analyzers",
+      "Co-authored research paper: 'Squishy Bioelectronic Circuits' (Cell Press Devices)"
     ],
-    technologies: ["ARM Cortex", "Arduino", "Embedded C", "PCB Design", "Wireless Protocols"]
+    technologies: ["Analog Circuit Design", "SPICE", "Keysight Tools", "Power Analysis"]
+  },
+  {
+    id: 5,
+    title: "Embedded Systems Engineering Intern",
+    company: "Core Summer Internships, UMass Amherst",
+    location: "Amherst, MA",
+    period: "Summer '23",
+    type: "Internship",
+    description: "Developing assistive technology for improved human interaction. Developed prosthetic arm control system with MyoWare muscle sensor integration and designed real-time embedded system for EMG signal processing.",
+    achievements: [
+      "Developed prosthetic arm control system with MyoWare muscle sensor integration",
+      "Designed real-time embedded system for EMG signal processing",
+      "Optimized control algorithms achieving 10% grip strength enhancement",
+      "Extensive testing and calibration for improved user dexterity"
+    ],
+    technologies: ["Embedded C", "Signal Processing", "EMG Sensors", "Motor Control"]
+  },
+  {
+    id: 6,
+    title: "Software Engineer",
+    company: "Axaram Codelabs",
+    location: "Gujarat, India (Remote)",
+    period: "Jan '21 - Jun '21",
+    type: "Professional",
+    description: "First professional experience during COVID-19 pandemic. Developed web applications and software solutions during early college years, gaining foundational experience in software development lifecycle.",
+    achievements: [
+      "Developed web applications and software solutions during early college years",
+      "Gained foundational experience in software development lifecycle",
+      "Worked remotely during pandemic, developing self-discipline and time management",
+      "Built client-facing applications and learned professional software practices"
+    ],
+    technologies: ["Web Development", "Software Engineering", "Client Communication"]
   }
 ];
 
