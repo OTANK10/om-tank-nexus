@@ -22,38 +22,6 @@ const projectsData = [
   },
   {
     id: 2,
-    title: "Neuromorphic Computing Circuits",
-    icon: <Brain className="w-6 h-6" />,
-    category: "Research",
-    description: "Exploring non-silicon alternatives for next-generation computing. Designed analog circuits on Nafion wafers for VLSI alternatives with 12% power efficiency improvement.",
-    highlights: [
-      "12% power efficiency improvement",
-      "Signal integrity analysis optimization",
-      "Keysight Agilent testing implementation",
-      "Co-authored: 'Squishy Bioelectronic Circuits' (Cell Press)"
-    ],
-    technologies: ["Analog Circuit Design", "SPICE", "Keysight Tools", "Power Analysis"],
-    status: "Published",
-    image: "/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png"
-  },
-  {
-    id: 3,
-    title: "Prosthetic Arm Control System",
-    icon: <Zap className="w-6 h-6" />,
-    category: "Assistive Tech",
-    description: "Developed prosthetic arm control system with MyoWare muscle sensor integration. Real-time embedded system for EMG signal processing with 10% grip strength enhancement.",
-    highlights: [
-      "10% grip strength enhancement",
-      "Real-time EMG signal processing",
-      "Improved user dexterity through testing",
-      "MyoWare muscle sensor integration"
-    ],
-    technologies: ["Embedded C", "Signal Processing", "EMG Sensors", "Motor Control"],
-    status: "Completed",
-    image: "/api/placeholder/400/300"
-  },
-  {
-    id: 4,
     title: "Tyre - Student Rideshare Platform",
     icon: <Smartphone className="w-6 h-6" />,
     category: "Startup",
@@ -69,55 +37,154 @@ const projectsData = [
     image: "/lovable-uploads/f6fab023-9a50-4a7f-bc28-9a15ff35cbda.png"
   },
   {
-    id: 5,
-    title: "ZEN Microprocessor Optimization",
+    id: 3,
+    title: "GNN based Circuit Timing Prediction for VLSI Design",
+    icon: <Brain className="w-6 h-6" />,
+    category: "Research",
+    description: "Develop a Graph Neural Network architecture using PyTorch Geometric to predict gate delays in digital circuits, to achieve <10% mean absolute error on synthetic circuit benchmarks.",
+    highlights: [
+      "<10% mean absolute error on synthetic circuit benchmarks",
+      "PyTorch Geometric implementation",
+      "Graph Neural Network architecture",
+      "Digital circuit timing optimization"
+    ],
+    technologies: ["PyTorch", "Python", "NetworkX", "Graph Neural Networks"],
+    status: "Present",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    id: 4,
+    title: "GPU-Accelerated RTL Logic Simulator based on Nvidia's GEM",
     icon: <Cpu className="w-6 h-6" />,
     category: "Hardware",
-    description: "Optimized gate-level designs for AMD ZEN microprocessor cores, reducing area utilization. Built modular UVM-based testbench components and automated verification processes.",
+    description: "Develop a CUDA-based RTL simulator for basic Verilog circuits, translating RTL into logic gate models and design a custom logic executor mimicking a simplified VLIW architecture to enable word-level parallelism on Nvidia GPUs.",
     highlights: [
-      "30% reduction in testing cycle time",
-      "Optimized gate-level designs",
-      "Modular UVM-based testbench components",
-      "Cross-functional PAT compliance collaboration"
+      "CUDA-based RTL simulation",
+      "Custom logic executor design",
+      "VLIW architecture implementation",
+      "Word-level parallelism on GPUs"
     ],
-    technologies: ["SystemVerilog", "UVM", "Python", "Logic Minimization", "PAT Analysis"],
-    status: "Professional Project",
-    image: "/lovable-uploads/7b7ab3a5-2e6c-4b1d-bb5b-5272972a273c.png"
+    technologies: ["CUDA", "Verilog", "GPU Computing", "RTL Design"],
+    status: "June 25",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    id: 5,
+    title: "UVM-Based Verification Environment for 32-bit Aligner",
+    icon: <Code className="w-6 h-6" />,
+    category: "Hardware",
+    description: "Developed modular UVM components including RX/TX agents, predictors, register model, and scoreboard to enable full stimulus-response validation.",
+    highlights: [
+      "Modular UVM component design",
+      "Full stimulus-response validation",
+      "RX/TX agents implementation",
+      "Register model and scoreboard"
+    ],
+    technologies: ["SystemVerilog", "UVM testbench", "Verification"],
+    status: "Spring 25",
+    image: "/api/placeholder/400/300"
   },
   {
     id: 6,
-    title: "AI Education Curriculum",
-    icon: <Brain className="w-6 h-6" />,
-    category: "Education",
-    description: "Developing AI-aware educational curriculum and facilitating integration of AI agents across diverse research labs. Creating new educational track: 'AI and the Future of Work'.",
+    title: "4-Tap FIR Filter on Intel DE1-SoC FPGA",
+    icon: <Microchip className="w-6 h-6" />,
+    category: "Hardware",
+    description: "Designed a 4-tap FIR filter using a scalable modular architecture with ARM Cortex-A9 HPS integration, real-time testing, and BRAM2S6 displays for 75-segment LEDs.",
     highlights: [
-      "AI agent integration across research labs",
-      "Streamlined research workflows",
-      "New educational track development",
-      "Cross-disciplinary AI curriculum"
+      "Scalable modular architecture",
+      "ARM Cortex-A9 HPS integration",
+      "Real-time testing capabilities",
+      "75-segment LED display integration"
     ],
-    technologies: ["AI/ML Tools", "Educational Technology", "Research Coordination", "Curriculum Design"],
-    status: "Ongoing",
-    image: "/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png"
+    technologies: ["Verilog", "RTL Design", "FPGA", "ARM Cortex-A9"],
+    status: "Winter 25",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    id: 7,
+    title: "Hardware Trojan Detection using Side-Channels",
+    icon: <Zap className="w-6 h-6" />,
+    category: "Security",
+    description: "Developed novel approach to detect hardware Trojans using simulation-based side-channel features achieving 93.5% detection accuracy across multiple circuits by PCA dimensionality reduction on behavioral data.",
+    highlights: [
+      "93.5% detection accuracy",
+      "Simulation-based side-channel analysis",
+      "PCA dimensionality reduction",
+      "Multi-circuit validation"
+    ],
+    technologies: ["Verilog", "Modelsim", "Power Analysis", "PCA"],
+    status: "Summer 24",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    id: 8,
+    title: "BananAI - Detection of Anthracnose Infected Banana Cells using AI",
+    icon: <Brain className="w-6 h-6" />,
+    category: "AI/ML",
+    description: "Architected machine learning pipeline utilizing Meta's Segment Anything Model (SAM) for automated lesion segmentation in plant pathology.",
+    highlights: [
+      "Meta's SAM integration",
+      "Automated lesion segmentation",
+      "Plant pathology application",
+      "Machine learning pipeline architecture"
+    ],
+    technologies: ["Python", "Tensorflow", "Meta's SAM", "Computer Vision"],
+    status: "Spring 24",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    id: 9,
+    title: "Analog Circuits Design for Random Number Generation",
+    icon: <Microchip className="w-6 h-6" />,
+    category: "Hardware",
+    description: "Designed a RNG using Linear Feedback Shift Registers for pseudo-random and Ring Oscillators for true rng, implemented on Altera SoC using Quartus Prime and ModelSim.",
+    highlights: [
+      "Linear Feedback Shift Register implementation",
+      "Ring Oscillator design",
+      "True and pseudo-random generation",
+      "Altera SoC implementation"
+    ],
+    technologies: ["Verilog", "VHDL", "SPICE", "Quartus Prime"],
+    status: "Fall 23",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    id: 10,
+    title: "Federated Learning on Heterogeneous Sensors",
+    icon: <Brain className="w-6 h-6" />,
+    category: "AI/ML",
+    description: "Analyzed data heterogeneity and adversarial robustness in federated learning systems across 5 datasets, revealing trade-offs between model performance, convergence efficiency, and attack resilience in distributed environments.",
+    highlights: [
+      "5-dataset analysis",
+      "Data heterogeneity study",
+      "Adversarial robustness evaluation",
+      "Distributed environment optimization"
+    ],
+    technologies: ["Jupyter Notebooks", "Python", "Data Science", "Federated Learning"],
+    status: "Fall 23",
+    image: "/api/placeholder/400/300"
   }
 ];
 
 const categoryColors = {
   "Wearable Tech": "bg-purple-500/10 text-purple-700 border-purple-200",
   "Research": "bg-blue-500/10 text-blue-700 border-blue-200",
-  "Assistive Tech": "bg-green-500/10 text-green-700 border-green-200",
   "Startup": "bg-orange-500/10 text-orange-700 border-orange-200",
   "Hardware": "bg-red-500/10 text-red-700 border-red-200",
-  "Education": "bg-teal-500/10 text-teal-700 border-teal-200"
+  "Security": "bg-emerald-500/10 text-emerald-700 border-emerald-200",
+  "AI/ML": "bg-indigo-500/10 text-indigo-700 border-indigo-200"
 };
 
 const statusColors = {
   "In Development": "bg-yellow-500/10 text-yellow-700 border-yellow-200",
-  "Published": "bg-green-500/10 text-green-700 border-green-200",
-  "Completed": "bg-blue-500/10 text-blue-700 border-blue-200",
+  "Present": "bg-green-500/10 text-green-700 border-green-200",
   "YC Interview Stage": "bg-orange-500/10 text-orange-700 border-orange-200",
-  "Professional Project": "bg-purple-500/10 text-purple-700 border-purple-200",
-  "Ongoing": "bg-teal-500/10 text-teal-700 border-teal-200"
+  "June 25": "bg-blue-500/10 text-blue-700 border-blue-200",
+  "Spring 25": "bg-cyan-500/10 text-cyan-700 border-cyan-200",
+  "Winter 25": "bg-slate-500/10 text-slate-700 border-slate-200",
+  "Summer 24": "bg-pink-500/10 text-pink-700 border-pink-200",
+  "Spring 24": "bg-lime-500/10 text-lime-700 border-lime-200",
+  "Fall 23": "bg-amber-500/10 text-amber-700 border-amber-200"
 };
 
 const Projects = () => {
@@ -233,13 +300,9 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-2">
-                  <Button variant="outline" size="sm" className="flex-1 group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-300">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Details
-                  </Button>
                   <Button variant="outline" size="sm" className="flex-1">
                     <Github className="w-4 h-4 mr-2" />
-                    Code
+                    Show on GitHub
                   </Button>
                 </div>
               </div>
@@ -253,7 +316,7 @@ const Projects = () => {
             <h3 className="text-2xl font-bold text-center mb-6">Project Impact</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">6+</div>
+                <div className="text-3xl font-bold text-accent mb-2">10+</div>
                 <div className="text-sm text-muted-foreground">Major Projects</div>
               </div>
               <div className="text-center">
