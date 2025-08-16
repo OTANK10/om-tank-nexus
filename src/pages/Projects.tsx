@@ -86,7 +86,8 @@ const projectsData = [
     ],
     technologies: ["Verilog", "Modelsim", "Power Analysis", "PCA"],
     status: "Summer 24",
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
+    githubUrl: "https://github.com/OTANK10/HardwareTrojan"
   },
   {
     id: 8,
