@@ -1,7 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/enhanced-button";
-import { Star, BookOpen, Film, Tv, ExternalLink, Calendar } from "lucide-react";
+import { Star, BookOpen, Film, Tv, ExternalLink, Calendar, Gamepad2 } from "lucide-react";
 
 const recommendationsData = [
   {
@@ -35,6 +35,16 @@ const recommendationsData = [
   },
   {
     id: 4,
+    title: "Expedition 33 Clair Obscur",
+    author: "Sandfall Interactive",
+    type: "Video Game",
+    category: "Gaming",
+    description: "I had not touched a video game since half a decade, and the hype around this made me try it. Absolutely mind blown how good a new gaming company made this game. From the soundtrack, to the story, to the character, to the art and the best of all the depiction of French art and culture. Absolute cinema.",
+    image: "/lovable-uploads/69f1d39d-4b45-4744-b8d9-8ce54034981d.png",
+    link: "https://share.google/SAV9iPDnhOjLZ224N"
+  },
+  {
+    id: 5,
     title: "The Three-Body Problem",
     author: "Liu Cixin",
     type: "Book",
@@ -43,7 +53,7 @@ const recommendationsData = [
     image: "/api/placeholder/300/400"
   },
   {
-    id: 5,
+    id: 6,
     title: "Silicon Valley",
     author: "HBO",
     type: "TV Show",
@@ -52,7 +62,7 @@ const recommendationsData = [
     image: "/api/placeholder/400/300"
   },
   {
-    id: 6,
+    id: 7,
     title: "Ex Machina",
     author: "Alex Garland",
     type: "Movie",
@@ -61,7 +71,7 @@ const recommendationsData = [
     image: "/api/placeholder/400/300"
   },
   {
-    id: 7,
+    id: 8,
     title: "Clean Code",
     author: "Robert C. Martin",
     type: "Book",
@@ -70,7 +80,7 @@ const recommendationsData = [
     image: "/api/placeholder/300/400"
   },
   {
-    id: 8,
+    id: 9,
     title: "Westworld",
     author: "HBO",
     type: "TV Show",
@@ -83,13 +93,15 @@ const recommendationsData = [
 const typeIcons = {
   Book: <BookOpen className="w-4 h-4" />,
   Movie: <Film className="w-4 h-4" />,
-  "TV Show": <Tv className="w-4 h-4" />
+  "TV Show": <Tv className="w-4 h-4" />,
+  "Video Game": <Gamepad2 className="w-4 h-4" />
 };
 
 const categoryColors = {
   Drama: "bg-red-500/10 text-red-700 border-red-200",
   Philosophy: "bg-indigo-500/10 text-indigo-700 border-indigo-200",
   Psychology: "bg-purple-500/10 text-purple-700 border-purple-200",
+  Gaming: "bg-emerald-500/10 text-emerald-700 border-emerald-200",
   "Science Fiction": "bg-blue-500/10 text-blue-700 border-blue-200",
   "Comedy/Tech": "bg-green-500/10 text-green-700 border-green-200",
   "Sci-Fi/AI": "bg-cyan-500/10 text-cyan-700 border-cyan-200",
