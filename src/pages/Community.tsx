@@ -22,19 +22,19 @@ const communityData = [
   },
   {
     id: 2,
-    title: "IEEE Student Chapter",
-    role: "Vice President",
-    organization: "University IEEE Branch",
-    period: "2023 - 2024",
-    impact: "Increased membership by 150%",
-    description: "Led technical workshops and organized industry connections for engineering students. Coordinated with industry professionals to provide real-world project experiences.",
+    title: "Interact Club",
+    role: "STEM Educator & Community Volunteer",
+    organization: "The Galaxy Education System, India",
+    period: "2018 - 2021",
+    impact: "Educated 150+ underprivileged children in STEM",
+    description: "Worked as a STEM educator for less fortunate children, developing creative learning programs and hands-on activities. During COVID-19, took initiatives to spread awareness about the disease and its prevention while continuing educational support through safe methods.",
     stats: {
-      newMembers: "200+",
-      eventsOrganized: "15",
-      industryPartnerships: "8"
+      childrenTaught: "150+",
+      covidAwareness: "500+",
+      educationPrograms: "12"
     },
-    image: "/api/placeholder/400/250",
-    skills: ["Event Management", "Industry Relations", "Team Leadership"]
+    image: "/lovable-uploads/interact-club-collage.png",
+    skills: ["STEM Education", "Community Outreach", "Health Awareness"]
   },
   {
     id: 3,
