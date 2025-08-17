@@ -10,14 +10,7 @@ const recommendationsData = [
     author: "HBO",
     type: "TV Show",
     category: "Drama",
-    dateWatched: "December 2024",
     description: "The acting is absolutely out of this world and the story mirroring real-life media conglomerate families and the corporate world is just brilliant. A masterclass in character development and power dynamics.",
-    keyTakeaways: [
-      "Complex family dynamics in business",
-      "Corporate politics and media influence",
-      "Masterful character development and dialogue"
-    ],
-    recommendedFor: "Business Students, Drama Enthusiasts",
     image: "/lovable-uploads/b11fdddf-5e68-4094-b943-62e951cbe621.png",
     link: "https://share.google/wJkqxCQ2pXrdIehrX"
   },
@@ -27,7 +20,6 @@ const recommendationsData = [
     author: "Fyodor Dostoevsky",
     type: "Book",
     category: "Philosophy",
-    dateRead: "December 2024",
     description: "My first time interacting with Russian philosophy and clearly this is a hard-hitting one. A profound exploration of faith, doubt, and morality that challenges every assumption about human nature.",
     image: "/lovable-uploads/63234440-7b11-4bfb-a98e-979564ef1ddb.png",
     link: "https://share.google/zwGs8kuP4k9nmKJ8r"
@@ -38,94 +30,52 @@ const recommendationsData = [
     author: "Daniel Kahneman",
     type: "Book",
     category: "Psychology",
-    dateRead: "March 2024",
     description: "A fascinating exploration of the two systems that drive how we think. Kahneman's insights into cognitive biases are incredibly relevant for engineering decision-making and problem-solving.",
-    keyTakeaways: [
-      "Understanding System 1 vs System 2 thinking",
-      "Recognizing cognitive biases in technical decisions",
-      "Improving probabilistic reasoning"
-    ],
-    recommendedFor: "Engineers, Researchers, Decision Makers",
-    image: "/api/placeholder/300/400"
-  },
-  {
-    id: 3,
-    title: "The Three-Body Problem",
-    author: "Liu Cixin",
-    type: "Book",
-    category: "Science Fiction",
-    dateRead: "February 2024",
-    description: "Mind-bending hard science fiction that combines physics, computer science, and philosophy. The technical concepts are brilliantly woven into the narrative.",
-    keyTakeaways: [
-      "Creative application of physics concepts",
-      "Thought-provoking technological scenarios",
-      "Cultural perspectives on scientific progress"
-    ],
-    recommendedFor: "STEM Students, Sci-Fi Enthusiasts",
     image: "/api/placeholder/300/400"
   },
   {
     id: 4,
+    title: "The Three-Body Problem",
+    author: "Liu Cixin",
+    type: "Book",
+    category: "Science Fiction",
+    description: "Mind-bending hard science fiction that combines physics, computer science, and philosophy. The technical concepts are brilliantly woven into the narrative.",
+    image: "/api/placeholder/300/400"
+  },
+  {
+    id: 5,
     title: "Silicon Valley",
     author: "HBO",
     type: "TV Show",
     category: "Comedy/Tech",
-    dateWatched: "January 2024",
     description: "Hilarious and surprisingly accurate portrayal of tech startup culture. Great insights into the challenges of building technology companies and the personalities involved.",
-    keyTakeaways: [
-      "Understanding startup dynamics",
-      "Technical challenges in scaling",
-      "Importance of team culture"
-    ],
-    recommendedFor: "Tech Professionals, Entrepreneurs",
-    image: "/api/placeholder/400/300"
-  },
-  {
-    id: 5,
-    title: "Ex Machina",
-    author: "Alex Garland",
-    type: "Movie",
-    category: "Sci-Fi/AI",
-    dateWatched: "December 2023",
-    description: "Thought-provoking exploration of artificial intelligence, consciousness, and ethics. Particularly relevant for anyone working in AI or machine learning.",
-    keyTakeaways: [
-      "Ethics of AI development",
-      "Questions about consciousness",
-      "Human-machine interaction"
-    ],
-    recommendedFor: "AI Researchers, Philosophy Enthusiasts",
     image: "/api/placeholder/400/300"
   },
   {
     id: 6,
+    title: "Ex Machina",
+    author: "Alex Garland",
+    type: "Movie",
+    category: "Sci-Fi/AI",
+    description: "Thought-provoking exploration of artificial intelligence, consciousness, and ethics. Particularly relevant for anyone working in AI or machine learning.",
+    image: "/api/placeholder/400/300"
+  },
+  {
+    id: 7,
     title: "Clean Code",
     author: "Robert C. Martin",
     type: "Book",
     category: "Programming",
-    dateRead: "November 2023",
     description: "Essential reading for any programmer. The principles apply beyond software to any engineering discipline where clarity and maintainability matter.",
-    keyTakeaways: [
-      "Writing readable and maintainable code",
-      "Refactoring strategies",
-      "Professional development practices"
-    ],
-    recommendedFor: "Programmers, Engineering Students",
     image: "/api/placeholder/300/400"
   },
   {
-    id: 7,
+    id: 8,
     title: "Westworld",
     author: "HBO",
     type: "TV Show",
     category: "Sci-Fi/Drama",
-    dateWatched: "October 2023",
     description: "Complex narrative exploring consciousness, free will, and the nature of reality. Excellent for thinking about AI ethics and the future of technology.",
-    keyTakeaways: [
-      "AI consciousness and ethics",
-      "Narrative complexity and storytelling",
-      "Philosophy of mind questions"
-    ],
-    recommendedFor: "AI Enthusiasts, Philosophy Students",
     image: "/api/placeholder/400/300"
   }
 ];
@@ -216,17 +166,13 @@ const Recommends = () => {
               <div className="p-6">
                 {/* Header */}
                 <div className="mb-4">
-                  <div className="flex items-center justify-between mb-2">
+                  <div className="flex items-center justify-start mb-2">
                     <Badge 
                       variant="outline" 
                       className={`text-xs ${categoryColors[item.category as keyof typeof categoryColors]}`}
                     >
                       {item.category}
                     </Badge>
-                    <div className="flex items-center text-xs text-muted-foreground">
-                      <Calendar className="w-3 h-3 mr-1" />
-                      {item.dateRead || item.dateWatched}
-                    </div>
                   </div>
                   
                   <h3 className="text-lg font-bold text-foreground mb-1">
