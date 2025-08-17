@@ -50,7 +50,8 @@ const communityData = [
       culturalDishes: "25+"
     },
     image: "/lovable-uploads/e02fb684-5dce-4947-8969-0734f385bc19.png",
-    skills: ["Cultural Exchange", "Event Coordination", "Recipe Development"]
+    skills: ["Cultural Exchange", "Event Coordination", "Recipe Development"],
+    link: "https://umassamherst.campuslabs.com/engage/organization/umasscookingclub"
   },
   {
     id: 4,
@@ -173,7 +174,12 @@ const Community = () => {
 
                 {/* Action Button */}
                 {project.id !== 2 && (
-                  <Button variant="outline" size="sm" className="w-full">
+                  <Button 
+                    variant="outline" 
+                    size="sm" 
+                    className="w-full"
+                    onClick={() => project.link && window.open(project.link, '_blank')}
+                  >
                     <ExternalLink className="w-4 h-4 mr-2" />
                     Learn More
                   </Button>
