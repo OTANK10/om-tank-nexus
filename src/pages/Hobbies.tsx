@@ -241,7 +241,7 @@ const Hobbies = () => {
           
           <div className="mt-8">
             <Button variant="outline" size="lg" asChild>
-              <a href="/projects">Explore My Projects</a>
+              <a href="/recommends">View My Recommends</a>
             </Button>
           </div>
         </div>
