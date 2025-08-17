@@ -37,13 +37,18 @@ const hobbiesData = [
     id: 3,
     title: "Mechatronics Projects",
     icon: <Cpu className="w-6 h-6" />,
-    description: "Fascinated by the intersection of mechanical, electrical, and software engineering. I enjoy building autonomous systems, robotics projects, and IoT devices that solve real-world problems through innovative mechatronic solutions.",
+    description: "My fascination with robots began in childhood, and engineering education made those dreams possible. At the UMass makerspace, I've been building practical solutions that make life easier - from a temperature-sensitive fan system to a pocket device that monitors network signal strength and alerts when entering dead zones. Lately, I've been focused on automating everyday processes using AI integration.",
     highlights: [
-      "Built multiple autonomous robot systems",
-      "IoT device development and prototyping",
-      "Integration of sensors and actuators"
+      "Childhood passion for robotics turned into reality",
+      "Built temperature-sensitive fan and network monitor",
+      "Currently automating processes with AI integration",
+      "Active maker at UMass makerspace"
     ],
-    mainImage: "/api/placeholder/600/400"
+    images: [
+      "/lovable-uploads/61108856-d391-4bf4-8d99-fb6159ad1bdf.png",
+      "/lovable-uploads/a3c67be6-9a37-44fe-b96a-b9f85026c725.png"
+    ],
+    mainImage: "/lovable-uploads/61108856-d391-4bf4-8d99-fb6159ad1bdf.png"
   },
   {
     id: 4,
