@@ -6,19 +6,19 @@ import { Users, Heart, Award, ExternalLink } from "lucide-react";
 const communityData = [
   {
     id: 1,
-    title: "STEM Mentorship Program",
-    role: "Founder & Lead Mentor",
-    organization: "Local High Schools",
-    period: "2022 - Present",
-    impact: "Mentored 50+ students in engineering",
-    description: "Founded a comprehensive mentorship program connecting university students with high school students interested in STEM careers. Developed curriculum and organized workshops on engineering fundamentals.",
+    title: "Indian Student Union",
+    role: "Founder & Senior Events Coordinator",
+    organization: "UMass Amherst",
+    period: "Fall 2022 - Summer 2025",
+    impact: "Founded and scaled to over 850 active members",
+    description: "Founded and scaled the organization to over 850 active members, fostering a thriving community that celebrates Indian and South Asian culture. Planned and executed high-impact cultural events, including Fashion Ka Jalwa and the ISU Gala recognizing community achievements through awards and performances.",
     stats: {
-      studentsImpacted: "50+",
-      workshopsHeld: "25",
-      collegeAcceptances: "85%"
+      activeMembers: "850+",
+      eventsPlanned: "15+",
+      culturalShowcases: "8"
     },
-    image: "/api/placeholder/400/250",
-    skills: ["Leadership", "Curriculum Development", "Public Speaking"]
+    image: "/lovable-uploads/8c5e2802-f890-4c9d-88e5-8da94939359d.png",
+    skills: ["Event Management", "Community Building", "Cultural Programming"]
   },
   {
     id: 2,
@@ -94,16 +94,24 @@ const Community = () => {
               className="overflow-hidden shadow-medium hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-gradient-card animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              {/* Image Placeholder */}
-              <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-4xl font-bold text-primary/60 mb-2">
-                      {project.title.split(' ').map(word => word[0]).join('').slice(0, 3)}
+              {/* Project Image */}
+              <div className="h-48 relative overflow-hidden">
+                {project.image.startsWith('/lovable-uploads/') ? (
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover"
+                  />
+                ) : (
+                  <div className="h-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+                    <div className="text-center">
+                      <div className="text-4xl font-bold text-primary/60 mb-2">
+                        {project.title.split(' ').map(word => word[0]).join('').slice(0, 3)}
+                      </div>
+                      <div className="text-sm text-muted-foreground">Project Image</div>
                     </div>
-                    <div className="text-sm text-muted-foreground">Project Image</div>
                   </div>
-                </div>
+                )}
               </div>
 
               <div className="p-6">
