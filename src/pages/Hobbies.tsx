@@ -68,10 +68,11 @@ const hobbiesData = [
       "Consistent strength training and progression"
     ],
     images: [
-      "/lovable-uploads/025b5d77-315d-4592-9eb4-c960da730de7.png",
-      "/lovable-uploads/e4c07ea3-dcfc-448a-bfbe-bdb2f64ef6cf.png"
+      "/lovable-uploads/e4c07ea3-dcfc-448a-bfbe-bdb2f64ef6cf.png",
+      "/lovable-uploads/401221ce-8899-46ae-969c-d2735f265fc2.png",
+      "/lovable-uploads/025b5d77-315d-4592-9eb4-c960da730de7.png"
     ],
-    mainImage: "/lovable-uploads/025b5d77-315d-4592-9eb4-c960da730de7.png"
+    mainImage: "/lovable-uploads/e4c07ea3-dcfc-448a-bfbe-bdb2f64ef6cf.png"
   }
 ];
 
@@ -102,26 +103,49 @@ const Hobbies = () => {
               <div className="flex-1 w-full">
                 <div className="relative overflow-hidden rounded-lg shadow-strong">
                   {hobby.images ? (
-                    // Multiple images for cooking
-                    <div className="grid grid-cols-2 gap-2">
-                      <img 
-                        src={hobby.images[0]} 
-                        alt={`${hobby.title} - Shakshuka and Dutch Baby`}
-                        className="w-full h-64 object-cover rounded-lg"
-                      />
-                      <div className="grid grid-rows-2 gap-2">
+                    hobby.title === "Cooking" ? (
+                      // Cooking layout
+                      <div className="grid grid-cols-2 gap-2">
                         <img 
-                          src={hobby.images[1]} 
-                          alt={`${hobby.title} - Pav Bhaji`}
-                          className="w-full h-[7.5rem] object-cover rounded-lg"
+                          src={hobby.images[0]} 
+                          alt={`${hobby.title} - Shakshuka and Dutch Baby`}
+                          className="w-full h-64 object-cover rounded-lg"
                         />
+                        <div className="grid grid-rows-2 gap-2">
+                          <img 
+                            src={hobby.images[1]} 
+                            alt={`${hobby.title} - Pav Bhaji`}
+                            className="w-full h-[7.5rem] object-cover rounded-lg"
+                          />
+                          <img 
+                            src={hobby.images[2]} 
+                            alt={`${hobby.title} - Rice Bowl`}
+                            className="w-full h-[7.5rem] object-cover rounded-lg"
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      // Powerlifting layout
+                      <div className="grid grid-cols-2 gap-2">
+                        <div className="grid grid-rows-2 gap-2">
+                          <img 
+                            src={hobby.images[0]} 
+                            alt={`${hobby.title} - Bench Press`}
+                            className="w-full h-[7.5rem] object-cover rounded-lg"
+                          />
+                          <img 
+                            src={hobby.images[1]} 
+                            alt={`${hobby.title} - Deadlift`}
+                            className="w-full h-[7.5rem] object-cover rounded-lg"
+                          />
+                        </div>
                         <img 
                           src={hobby.images[2]} 
-                          alt={`${hobby.title} - Rice Bowl`}
-                          className="w-full h-[7.5rem] object-cover rounded-lg"
+                          alt={`${hobby.title} - UMass Powerlifting Team`}
+                          className="w-full h-64 object-cover rounded-lg"
                         />
                       </div>
-                    </div>
+                    )
                   ) : hobby.mainImage.startsWith('/lovable-uploads/') ? (
                     <img 
                       src={hobby.mainImage} 
