@@ -172,10 +172,12 @@ const Community = () => {
                 </div>
 
                 {/* Action Button */}
-                <Button variant="outline" size="sm" className="w-full">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  Learn More
-                </Button>
+                {project.id !== 2 && (
+                  <Button variant="outline" size="sm" className="w-full">
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Learn More
+                  </Button>
+                )}
               </div>
             </Card>
           ))}
