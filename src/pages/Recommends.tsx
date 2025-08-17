@@ -23,6 +23,17 @@ const recommendationsData = [
   },
   {
     id: 2,
+    title: "The Brothers Karamazov",
+    author: "Fyodor Dostoevsky",
+    type: "Book",
+    category: "Philosophy",
+    dateRead: "December 2024",
+    description: "My first time interacting with Russian philosophy and clearly this is a hard-hitting one. A profound exploration of faith, doubt, and morality that challenges every assumption about human nature.",
+    image: "/lovable-uploads/63234440-7b11-4bfb-a98e-979564ef1ddb.png",
+    link: "https://share.google/zwGs8kuP4k9nmKJ8r"
+  },
+  {
+    id: 3,
     title: "Thinking, Fast and Slow",
     author: "Daniel Kahneman",
     type: "Book",
@@ -127,6 +138,7 @@ const typeIcons = {
 
 const categoryColors = {
   Drama: "bg-red-500/10 text-red-700 border-red-200",
+  Philosophy: "bg-indigo-500/10 text-indigo-700 border-indigo-200",
   Psychology: "bg-purple-500/10 text-purple-700 border-purple-200",
   "Science Fiction": "bg-blue-500/10 text-blue-700 border-blue-200",
   "Comedy/Tech": "bg-green-500/10 text-green-700 border-green-200",
