@@ -1,109 +1,82 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/enhanced-button";
-import { Camera, Music, Mountain, Code, Book, Gamepad2, ExternalLink } from "lucide-react";
+import { ChefHat, Mountain, Cpu, Target, Dumbbell } from "lucide-react";
 
 const hobbiesData = [
   {
     id: 1,
-    title: "Photography",
-    icon: <Camera className="w-6 h-6" />,
-    category: "Creative",
-    description: "Passionate about capturing moments and landscapes. Specialized in street photography and nature shots, with a focus on geometric compositions and lighting.",
+    title: "Cooking",
+    icon: <ChefHat className="w-6 h-6" />,
+    description: "Passionate about exploring diverse cuisines and experimenting with flavors from around the world. From traditional Indian dishes to international fusion, I love creating memorable culinary experiences and sharing them with friends through cooking sessions and cultural exchanges.",
     highlights: [
-      "Winner of University Photography Contest 2023",
-      "500+ photos in personal portfolio",
-      "Featured in local gallery exhibition"
+      "Introduced 8+ new recipes to UMass Cooking Club",
+      "Organized weekly cooking sessions (2022-2024)",
+      "Specialized in fusion and traditional cuisines"
     ],
-    gear: ["Canon EOS R6", "24-70mm f/2.8", "Lightroom", "Photoshop"],
-    image: "/api/placeholder/400/300"
+    images: [
+      "/lovable-uploads/df1ed70f-097b-412e-87e2-53216f018661.png",
+      "/lovable-uploads/d93f98d1-1ea7-47ae-b1e6-e068b0baf912.png",
+      "/lovable-uploads/770264c3-95a3-4eb7-a934-cd3b59a8b123.png"
+    ],
+    mainImage: "/lovable-uploads/df1ed70f-097b-412e-87e2-53216f018661.png"
   },
   {
     id: 2,
-    title: "Music Production",
-    icon: <Music className="w-6 h-6" />,
-    category: "Creative",
-    description: "Creating electronic music and ambient soundscapes. Love experimenting with synthesizers and digital audio workstations to craft unique compositions.",
+    title: "Trekking & Hiking",
+    icon: <Mountain className="w-6 h-6" />,
+    description: "Love exploring nature's beauty through challenging treks and scenic hikes. Whether it's conquering mountain peaks or discovering hidden trails, trekking provides the perfect escape and physical challenge while connecting with the natural world.",
     highlights: [
-      "Released 3 EPs on SoundCloud",
-      "10,000+ plays across platforms",
-      "Collaborated with 5 local artists"
+      "Completed multiple challenging mountain treks",
+      "Regular weekend hiking enthusiast",
+      "Nature photography during expeditions"
     ],
-    gear: ["Ableton Live", "Native Instruments", "Audio Interface", "Studio Monitors"],
-    image: "/api/placeholder/400/300"
+    mainImage: "/api/placeholder/600/400"
   },
   {
     id: 3,
-    title: "Rock Climbing",
-    icon: <Mountain className="w-6 h-6" />,
-    category: "Adventure",
-    description: "Indoor and outdoor climbing enthusiast. Enjoy the mental and physical challenge of problem-solving on the wall, from bouldering to sport climbing.",
+    title: "Mechatronics Projects",
+    icon: <Cpu className="w-6 h-6" />,
+    description: "Fascinated by the intersection of mechanical, electrical, and software engineering. I enjoy building autonomous systems, robotics projects, and IoT devices that solve real-world problems through innovative mechatronic solutions.",
     highlights: [
-      "Completed 50+ outdoor routes",
-      "Lead climber (5.10+ grade)",
-      "Member of university climbing team"
+      "Built multiple autonomous robot systems",
+      "IoT device development and prototyping",
+      "Integration of sensors and actuators"
     ],
-    gear: ["Climbing Shoes", "Harness", "Dynamic Rope", "Protection Gear"],
-    image: "/api/placeholder/400/300"
+    mainImage: "/api/placeholder/600/400"
   },
   {
     id: 4,
-    title: "Open Source Contributing",
-    icon: <Code className="w-6 h-6" />,
-    category: "Technology",
-    description: "Contributing to open-source projects, particularly in hardware simulation and EDA tools. Passionate about making engineering tools more accessible.",
+    title: "Rainbow 6 Siege Esports",
+    icon: <Target className="w-6 h-6" />,
+    description: "During COVID-19, I reached near-professional level in Rainbow 6 Siege and almost joined a competitive SEA (Southeast Asia) team. The tactical depth, team coordination, and strategic thinking required in this game provided an intense and rewarding competitive experience.",
     highlights: [
-      "20+ contributions to major projects",
-      "Maintainer of 2 popular repositories",
-      "Helped fix 100+ bugs across projects"
+      "Nearly achieved professional status during COVID",
+      "Considered for SEA competitive team",
+      "High-level tactical gameplay and strategy"
     ],
-    gear: ["GitHub", "VS Code", "Docker", "Various Programming Languages"],
-    image: "/api/placeholder/400/300"
+    mainImage: "/api/placeholder/600/400"
   },
   {
     id: 5,
-    title: "Reading & Learning",
-    icon: <Book className="w-6 h-6" />,
-    category: "Intellectual",
-    description: "Voracious reader with interests spanning from technical literature to science fiction. Always exploring new concepts and technologies.",
+    title: "Powerlifting",
+    icon: <Dumbbell className="w-6 h-6" />,
+    description: "Dedicated to the sport of powerlifting, focusing on the three main lifts: squat, bench press, and deadlift. Member of UMass Powerlifting Club (2021-2023), where I trained consistently, competed at state level, and built lasting friendships through our shared passion for strength training.",
     highlights: [
-      "Read 50+ books annually",
-      "Technical blog with 1000+ readers",
-      "Book club organizer"
+      "UMass Powerlifting Club member (2021-2023)",
+      "Competed in state level collegiate competition",
+      "Consistent strength training and progression"
     ],
-    gear: ["Kindle", "Physical Books", "Notion for Notes", "Podcasts"],
-    image: "/api/placeholder/400/300"
-  },
-  {
-    id: 6,
-    title: "Retro Gaming",
-    icon: <Gamepad2 className="w-6 h-6" />,
-    category: "Entertainment",
-    description: "Collector and player of vintage video games. Fascinated by the evolution of gaming technology and the artistry of classic game design.",
-    highlights: [
-      "Collection of 200+ retro games",
-      "Restored 5 vintage consoles",
-      "Gaming history enthusiast"
-    ],
-    gear: ["Nintendo Systems", "Sega Consoles", "Arcade Cabinets", "Emulation Setups"],
-    image: "/api/placeholder/400/300"
+    mainImage: "/lovable-uploads/025b5d77-315d-4592-9eb4-c960da730de7.png"
   }
 ];
-
-const categoryColors = {
-  Creative: "bg-purple-500/10 text-purple-700 border-purple-200",
-  Adventure: "bg-green-500/10 text-green-700 border-green-200",
-  Technology: "bg-blue-500/10 text-blue-700 border-blue-200",
-  Intellectual: "bg-orange-500/10 text-orange-700 border-orange-200",
-  Entertainment: "bg-pink-500/10 text-pink-700 border-pink-200"
-};
 
 const Hobbies = () => {
   return (
     <div className="min-h-screen pt-24 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12 animate-fade-in">
+        <div className="text-center mb-16 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Hobbies & <span className="gradient-text">Interests</span>
           </h1>
@@ -113,121 +86,105 @@ const Hobbies = () => {
           </p>
         </div>
 
-        {/* Categories Overview */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12 animate-slide-in-left">
-          {Object.keys(categoryColors).map((category) => (
-            <Badge 
-              key={category} 
-              variant="outline" 
-              className={`px-4 py-2 ${categoryColors[category as keyof typeof categoryColors]}`}
-            >
-              {category}
-            </Badge>
-          ))}
-        </div>
-
-        {/* Hobbies Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Hobbies Alternating Layout */}
+        <div className="space-y-16">
           {hobbiesData.map((hobby, index) => (
-            <Card 
+            <div 
               key={hobby.id}
-              className="group overflow-hidden shadow-medium hover:shadow-strong transition-all duration-300 hover:-translate-y-2 bg-gradient-card animate-scale-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center animate-fade-in`}
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
-              {/* Image Placeholder */}
-              <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <div className="text-center">
-                    <div className="text-primary/60 mb-3 transform group-hover:scale-110 transition-transform duration-300">
+              {/* Image Section */}
+              <div className="flex-1 w-full">
+                <div className="relative overflow-hidden rounded-lg shadow-strong">
+                  {hobby.images ? (
+                    // Multiple images for cooking
+                    <div className="grid grid-cols-2 gap-2">
+                      <img 
+                        src={hobby.images[0]} 
+                        alt={`${hobby.title} - Shakshuka and Dutch Baby`}
+                        className="w-full h-64 object-cover rounded-lg"
+                      />
+                      <div className="grid grid-rows-2 gap-2">
+                        <img 
+                          src={hobby.images[1]} 
+                          alt={`${hobby.title} - Pav Bhaji`}
+                          className="w-full h-[7.5rem] object-cover rounded-lg"
+                        />
+                        <img 
+                          src={hobby.images[2]} 
+                          alt={`${hobby.title} - Rice Bowl`}
+                          className="w-full h-[7.5rem] object-cover rounded-lg"
+                        />
+                      </div>
+                    </div>
+                  ) : hobby.mainImage.startsWith('/lovable-uploads/') ? (
+                    <img 
+                      src={hobby.mainImage} 
+                      alt={hobby.title}
+                      className="w-full h-80 object-cover"
+                    />
+                  ) : (
+                    <div className="h-80 bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+                      <div className="text-center">
+                        <div className="text-primary/60 mb-4 flex justify-center">
+                          {hobby.icon}
+                        </div>
+                        <div className="text-2xl font-bold text-primary/60">{hobby.title}</div>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              </div>
+
+              {/* Content Section */}
+              <div className="flex-1 w-full">
+                <Card className="p-8 h-full shadow-medium">
+                  <div className="flex items-center mb-4">
+                    <div className="text-primary mr-3">
                       {hobby.icon}
                     </div>
-                    <div className="text-lg font-bold text-primary/80">
-                      {hobby.title}
-                    </div>
+                    <h3 className="text-2xl font-bold text-foreground">{hobby.title}</h3>
                   </div>
-                </div>
-                
-                {/* Category Badge */}
-                <div className="absolute top-4 right-4">
-                  <Badge 
-                    variant="outline" 
-                    className={`text-xs ${categoryColors[hobby.category as keyof typeof categoryColors]}`}
-                  >
-                    {hobby.category}
-                  </Badge>
-                </div>
-              </div>
 
-              <div className="p-6">
-                {/* Title */}
-                <h3 className="text-xl font-bold text-foreground mb-3 flex items-center">
-                  {hobby.icon}
-                  <span className="ml-2">{hobby.title}</span>
-                </h3>
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    {hobby.description}
+                  </p>
 
-                {/* Description */}
-                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
-                  {hobby.description}
-                </p>
-
-                {/* Highlights */}
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold mb-2 text-foreground">Highlights</h4>
-                  <ul className="space-y-1">
-                    {hobby.highlights.map((highlight, idx) => (
-                      <li key={idx} className="text-xs text-muted-foreground flex items-start">
-                        <span className="text-accent mr-2 font-bold">•</span>
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Gear/Tools */}
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold mb-2 text-foreground">Tools & Gear</h4>
-                  <div className="flex flex-wrap gap-1">
-                    {hobby.gear.map((item, idx) => (
-                      <Badge key={idx} variant="secondary" className="text-xs">
-                        {item}
-                      </Badge>
-                    ))}
+                  <div className="mb-6">
+                    <h4 className="text-sm font-semibold mb-3 text-foreground">Highlights</h4>
+                    <ul className="space-y-2">
+                      {hobby.highlights.map((highlight, idx) => (
+                        <li key={idx} className="text-sm text-muted-foreground flex items-start">
+                          <span className="text-accent mr-2 font-bold">•</span>
+                          {highlight}
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                </div>
-
-                {/* Action Button */}
-                <Button variant="outline" size="sm" className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-300">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  View Portfolio
-                </Button>
+                </Card>
               </div>
-            </Card>
+            </div>
           ))}
         </div>
 
-        {/* Fun Facts Section */}
-        <div className="mt-16 animate-fade-in">
-          <Card className="p-8 bg-gradient-to-r from-accent/5 to-primary/5 border border-accent/20">
-            <h3 className="text-2xl font-bold text-center mb-6">Fun Facts</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">500+</div>
-                <div className="text-sm text-muted-foreground">Photos Taken This Year</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-muted-foreground">Books Read Annually</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-tech-orange mb-2">20+</div>
-                <div className="text-sm text-muted-foreground">Climbing Routes Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">100+</div>
-                <div className="text-sm text-muted-foreground">Open Source Contributions</div>
-              </div>
-            </div>
+        {/* Navigation to other sections */}
+        <div className="text-center mt-16 animate-fade-in">
+          <Card className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 border border-primary/20">
+            <h3 className="text-2xl font-bold mb-4">Explore More</h3>
+            <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
+              Discover more about my journey through my community work, projects, and recommendations.
+            </p>
+            <Button variant="hero" size="lg" asChild>
+              <a href="/community">View Community Impact</a>
+            </Button>
           </Card>
+          
+          <div className="mt-8">
+            <Button variant="outline" size="lg" asChild>
+              <a href="/projects">Explore My Projects</a>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
