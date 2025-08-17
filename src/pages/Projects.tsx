@@ -324,11 +324,10 @@ const Projects = () => {
               </div>
 
               <div className="p-6">
-                {/* Title */}
-                <h3 className="text-xl font-bold text-foreground mb-3 flex items-center">
+                {/* Icon */}
+                <div className="text-xl font-bold text-foreground mb-3 flex items-center">
                   {project.icon}
-                  <span className="ml-2">{project.title}</span>
-                </h3>
+                </div>
 
                 {/* Description */}
                 <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
