@@ -49,7 +49,7 @@ const communityData = [
       weeklyMeetings: "100+",
       culturalDishes: "25+"
     },
-    image: "/lovable-uploads/669e8e0d-4fd4-433f-a529-1f5a549e69da.png",
+    image: "/lovable-uploads/e02fb684-5dce-4947-8969-0734f385bc19.png",
     skills: ["Cultural Exchange", "Event Coordination", "Recipe Development"]
   },
   {
