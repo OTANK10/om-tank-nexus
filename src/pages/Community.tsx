@@ -85,26 +85,6 @@ const Community = () => {
           </p>
         </div>
 
-        {/* Stats Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-slide-in-left">
-          <Card className="p-6 text-center shadow-soft hover:shadow-medium transition-all duration-300">
-            <Users className="w-8 h-8 text-primary mx-auto mb-3" />
-            <div className="text-3xl font-bold text-foreground mb-1">250+</div>
-            <div className="text-sm text-muted-foreground">People Impacted</div>
-          </Card>
-          
-          <Card className="p-6 text-center shadow-soft hover:shadow-medium transition-all duration-300">
-            <Heart className="w-8 h-8 text-accent mx-auto mb-3" />
-            <div className="text-3xl font-bold text-foreground mb-1">500+</div>
-            <div className="text-sm text-muted-foreground">Volunteer Hours</div>
-          </Card>
-          
-          <Card className="p-6 text-center shadow-soft hover:shadow-medium transition-all duration-300">
-            <Award className="w-8 h-8 text-tech-orange mx-auto mb-3" />
-            <div className="text-3xl font-bold text-foreground mb-1">15+</div>
-            <div className="text-sm text-muted-foreground">Programs Led</div>
-          </Card>
-        </div>
 
         {/* Community Projects Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
