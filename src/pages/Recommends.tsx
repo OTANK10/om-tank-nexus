@@ -253,30 +253,6 @@ const Recommends = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div className="mt-16 animate-fade-in">
-          <Card className="p-8 bg-gradient-to-r from-primary/5 to-accent/5 border border-primary/20">
-            <h3 className="text-2xl font-bold text-center mb-6">Reading & Viewing Stats</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-muted-foreground">Books Read This Year</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">25+</div>
-                <div className="text-sm text-muted-foreground">Movies Watched</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-tech-orange mb-2">10+</div>
-                <div className="text-sm text-muted-foreground">TV Series Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-accent mb-2">4.5</div>
-                <div className="text-sm text-muted-foreground">Average Rating</div>
-              </div>
-            </div>
-          </Card>
-        </div>
 
         {/* Call to Action */}
         <div className="text-center mt-12 animate-fade-in">
