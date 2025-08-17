@@ -315,10 +315,13 @@ const Projects = () => {
               </div>
 
               <div className="p-6">
-                {/* Icon */}
+                {/* Icon and Title for specific projects */}
                 {project.icon && (
                   <div className="text-xl font-bold text-foreground mb-3 flex items-center">
                     {project.icon}
+                    {(project.id === 1 || project.id === 2) && (
+                      <span className="ml-2">{project.id === 1 ? "Smart Shoe" : "Tyre"}</span>
+                    )}
                   </div>
                 )}
 
