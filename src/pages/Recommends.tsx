@@ -257,13 +257,13 @@ const Recommends = () => {
         {/* Call to Action */}
         <div className="text-center mt-12 animate-fade-in">
           <Card className="p-8 bg-gradient-to-r from-accent/5 to-primary/5 border border-accent/20">
-            <h3 className="text-2xl font-bold mb-4">Have a Recommendation?</h3>
+            <h3 className="text-2xl font-bold mb-4">Find Me Interesting Enough to Connect?</h3>
             <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-              I'm always looking for great books, movies, and shows. If you have something 
-              that you think I'd enjoy, I'd love to hear about it!
+              If my recommendations resonate with you or you'd like to discuss any of these books, 
+              movies, or shows, I'd love to connect and hear your thoughts!
             </p>
-            <Button variant="hero" size="lg">
-              Share Your Recommendation
+            <Button variant="hero" size="lg" asChild>
+              <a href="/contact">Connect With Me</a>
             </Button>
           </Card>
         </div>
