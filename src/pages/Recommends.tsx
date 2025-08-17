@@ -6,11 +6,27 @@ import { Star, BookOpen, Film, Tv, ExternalLink, Calendar } from "lucide-react";
 const recommendationsData = [
   {
     id: 1,
+    title: "Succession",
+    author: "HBO",
+    type: "TV Show",
+    category: "Drama",
+    dateWatched: "December 2024",
+    description: "The acting is absolutely out of this world and the story mirroring real-life media conglomerate families and the corporate world is just brilliant. A masterclass in character development and power dynamics.",
+    keyTakeaways: [
+      "Complex family dynamics in business",
+      "Corporate politics and media influence",
+      "Masterful character development and dialogue"
+    ],
+    recommendedFor: "Business Students, Drama Enthusiasts",
+    image: "/lovable-uploads/b11fdddf-5e68-4094-b943-62e951cbe621.png",
+    link: "https://share.google/wJkqxCQ2pXrdIehrX"
+  },
+  {
+    id: 2,
     title: "Thinking, Fast and Slow",
     author: "Daniel Kahneman",
     type: "Book",
     category: "Psychology",
-    rating: 5,
     dateRead: "March 2024",
     description: "A fascinating exploration of the two systems that drive how we think. Kahneman's insights into cognitive biases are incredibly relevant for engineering decision-making and problem-solving.",
     keyTakeaways: [
@@ -22,12 +38,11 @@ const recommendationsData = [
     image: "/api/placeholder/300/400"
   },
   {
-    id: 2,
+    id: 3,
     title: "The Three-Body Problem",
     author: "Liu Cixin",
     type: "Book",
     category: "Science Fiction",
-    rating: 5,
     dateRead: "February 2024",
     description: "Mind-bending hard science fiction that combines physics, computer science, and philosophy. The technical concepts are brilliantly woven into the narrative.",
     keyTakeaways: [
@@ -39,12 +54,11 @@ const recommendationsData = [
     image: "/api/placeholder/300/400"
   },
   {
-    id: 3,
+    id: 4,
     title: "Silicon Valley",
     author: "HBO",
     type: "TV Show",
     category: "Comedy/Tech",
-    rating: 4,
     dateWatched: "January 2024",
     description: "Hilarious and surprisingly accurate portrayal of tech startup culture. Great insights into the challenges of building technology companies and the personalities involved.",
     keyTakeaways: [
@@ -56,12 +70,11 @@ const recommendationsData = [
     image: "/api/placeholder/400/300"
   },
   {
-    id: 4,
+    id: 5,
     title: "Ex Machina",
     author: "Alex Garland",
     type: "Movie",
     category: "Sci-Fi/AI",
-    rating: 5,
     dateWatched: "December 2023",
     description: "Thought-provoking exploration of artificial intelligence, consciousness, and ethics. Particularly relevant for anyone working in AI or machine learning.",
     keyTakeaways: [
@@ -73,12 +86,11 @@ const recommendationsData = [
     image: "/api/placeholder/400/300"
   },
   {
-    id: 5,
+    id: 6,
     title: "Clean Code",
     author: "Robert C. Martin",
     type: "Book",
     category: "Programming",
-    rating: 4,
     dateRead: "November 2023",
     description: "Essential reading for any programmer. The principles apply beyond software to any engineering discipline where clarity and maintainability matter.",
     keyTakeaways: [
@@ -90,12 +102,11 @@ const recommendationsData = [
     image: "/api/placeholder/300/400"
   },
   {
-    id: 6,
+    id: 7,
     title: "Westworld",
     author: "HBO",
     type: "TV Show",
     category: "Sci-Fi/Drama",
-    rating: 4,
     dateWatched: "October 2023",
     description: "Complex narrative exploring consciousness, free will, and the nature of reality. Excellent for thinking about AI ethics and the future of technology.",
     keyTakeaways: [
@@ -115,6 +126,7 @@ const typeIcons = {
 };
 
 const categoryColors = {
+  Drama: "bg-red-500/10 text-red-700 border-red-200",
   Psychology: "bg-purple-500/10 text-purple-700 border-purple-200",
   "Science Fiction": "bg-blue-500/10 text-blue-700 border-blue-200",
   "Comedy/Tech": "bg-green-500/10 text-green-700 border-green-200",
@@ -161,16 +173,24 @@ const Recommends = () => {
             >
               {/* Image/Cover */}
               <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                  <div className="text-center p-4">
-                    <div className="text-3xl font-bold text-primary/80 mb-2">
-                      {item.title.split(' ').map(word => word[0]).join('').slice(0, 3)}
-                    </div>
-                    <div className="text-sm text-muted-foreground">
-                      {item.type} Cover
+                {item.image && item.image.startsWith('/lovable-uploads/') ? (
+                  <img 
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <div className="text-center p-4">
+                      <div className="text-3xl font-bold text-primary/80 mb-2">
+                        {item.title.split(' ').map(word => word[0]).join('').slice(0, 3)}
+                      </div>
+                      <div className="text-sm text-muted-foreground">
+                        {item.type} Cover
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
                 
                 {/* Type and Rating Badge */}
                 <div className="absolute top-4 left-4 flex items-center gap-2">
@@ -178,17 +198,6 @@ const Recommends = () => {
                     {typeIcons[item.type as keyof typeof typeIcons]}
                     <span className="ml-1">{item.type}</span>
                   </Badge>
-                </div>
-                
-                <div className="absolute top-4 right-4 flex items-center gap-1 bg-background/90 rounded-full px-2 py-1">
-                  {[...Array(5)].map((_, i) => (
-                    <Star 
-                      key={i} 
-                      className={`w-3 h-3 ${
-                        i < item.rating ? 'text-yellow-500 fill-yellow-500' : 'text-muted-foreground'
-                      }`} 
-                    />
-                  ))}
                 </div>
               </div>
 
@@ -244,7 +253,12 @@ const Recommends = () => {
                 </div>
 
                 {/* Action Button */}
-                <Button variant="outline" size="sm" className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-300">
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="w-full group-hover:bg-accent group-hover:text-accent-foreground transition-colors duration-300"
+                  onClick={() => item.link && window.open(item.link, '_blank')}
+                >
                   <ExternalLink className="w-4 h-4 mr-2" />
                   Learn More
                 </Button>
