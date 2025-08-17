@@ -45,10 +45,10 @@ const hobbiesData = [
       "Active maker at UMass makerspace"
     ],
     images: [
-      "/lovable-uploads/61108856-d391-4bf4-8d99-fb6159ad1bdf.png",
+      "/lovable-uploads/af7e711c-45c8-462a-9a64-8b43d4e9a689.png",
       "/lovable-uploads/a3c67be6-9a37-44fe-b96a-b9f85026c725.png"
     ],
-    mainImage: "/lovable-uploads/61108856-d391-4bf4-8d99-fb6159ad1bdf.png"
+    mainImage: "/lovable-uploads/af7e711c-45c8-462a-9a64-8b43d4e9a689.png"
   },
   {
     id: 4,
