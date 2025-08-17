@@ -33,7 +33,7 @@ const communityData = [
       covidAwareness: "500+",
       educationPrograms: "12"
     },
-    image: "/lovable-uploads/interact-club-collage.png",
+    image: "/lovable-uploads/dcb03e8a-5c95-4ad7-b36a-c180ae2dfec8.png",
     skills: ["STEM Education", "Community Outreach", "Health Awareness"]
   },
   {
