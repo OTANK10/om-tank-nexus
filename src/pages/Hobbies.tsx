@@ -67,7 +67,11 @@ const hobbiesData = [
       "Competed in state level collegiate competition",
       "Consistent strength training and progression"
     ],
-    mainImage: "/lovable-uploads/e4c07ea3-dcfc-448a-bfbe-bdb2f64ef6cf.png"
+    images: [
+      "/lovable-uploads/025b5d77-315d-4592-9eb4-c960da730de7.png",
+      "/lovable-uploads/e4c07ea3-dcfc-448a-bfbe-bdb2f64ef6cf.png"
+    ],
+    mainImage: "/lovable-uploads/025b5d77-315d-4592-9eb4-c960da730de7.png"
   }
 ];
 
