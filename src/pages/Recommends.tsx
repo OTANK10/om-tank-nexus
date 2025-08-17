@@ -26,15 +26,6 @@ const recommendationsData = [
   },
   {
     id: 3,
-    title: "Thinking, Fast and Slow",
-    author: "Daniel Kahneman",
-    type: "Book",
-    category: "Psychology",
-    description: "A fascinating exploration of the two systems that drive how we think. Kahneman's insights into cognitive biases are incredibly relevant for engineering decision-making and problem-solving.",
-    image: "/api/placeholder/300/400"
-  },
-  {
-    id: 4,
     title: "Expedition 33 Clair Obscur",
     author: "Sandfall Interactive",
     type: "Video Game",
@@ -44,13 +35,13 @@ const recommendationsData = [
     link: "https://share.google/SAV9iPDnhOjLZ224N"
   },
   {
-    id: 5,
+    id: 4,
     title: "The Three-Body Problem",
     author: "Netflix",
     type: "TV Show",
     category: "Science Fiction",
     description: "Mind-bending hard science fiction that combines physics, computer science, and philosophy. The technical concepts are brilliantly woven into the narrative.",
-    image: "/api/placeholder/400/300",
+    image: "/lovable-uploads/328a10fe-ce5e-4c58-be48-e00da6fd7a6c.png",
     link: "https://share.google/qWTltnAcfrrk3TgWl"
   }
 ];
