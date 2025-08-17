@@ -198,9 +198,14 @@ const Community = () => {
               I'm always looking for opportunities to contribute to meaningful projects 
               and initiatives that make a positive impact in the community.
             </p>
-            <Button variant="hero" size="lg">
-              Get In Touch
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="hero" size="lg" asChild>
+                <a href="/contact">Connect With Me</a>
+              </Button>
+              <Button variant="outline" size="lg" asChild>
+                <a href="/hobbies">Explore My Hobbies</a>
+              </Button>
+            </div>
           </Card>
         </div>
       </div>
