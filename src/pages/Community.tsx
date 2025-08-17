@@ -143,7 +143,7 @@ const Community = () => {
 
                 {/* Description */}
                 <p className="text-muted-foreground mb-4 leading-relaxed">
-                  {project.description}
+                  {project.description.replace("Currently working", "Worked")}
                 </p>
 
                 {/* Stats */}
