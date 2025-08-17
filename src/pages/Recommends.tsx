@@ -133,7 +133,7 @@ const Recommends = () => {
             My <span className="gradient-text">Recommendations</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Books, movies, and shows that have shaped my thinking, inspired creativity, 
+            Recently discovered books, movies, and shows that have shaped my thinking, inspired creativity, 
             and provided valuable insights for both personal and professional growth.
           </p>
         </div>
