@@ -69,8 +69,7 @@ const hobbiesData = [
     ],
     images: [
       "/lovable-uploads/e4c07ea3-dcfc-448a-bfbe-bdb2f64ef6cf.png",
-      "/lovable-uploads/401221ce-8899-46ae-969c-d2735f265fc2.png",
-      "/lovable-uploads/025b5d77-315d-4592-9eb4-c960da730de7.png"
+      "/lovable-uploads/401221ce-8899-46ae-969c-d2735f265fc2.png"
     ],
     mainImage: "/lovable-uploads/e4c07ea3-dcfc-448a-bfbe-bdb2f64ef6cf.png"
   }
@@ -125,23 +124,16 @@ const Hobbies = () => {
                         </div>
                       </div>
                     ) : (
-                      // Powerlifting layout
+                      // Powerlifting layout - 2 images side by side
                       <div className="grid grid-cols-2 gap-2">
-                        <div className="grid grid-rows-2 gap-2">
-                          <img 
-                            src={hobby.images[0]} 
-                            alt={`${hobby.title} - Bench Press`}
-                            className="w-full h-[7.5rem] object-cover rounded-lg"
-                          />
-                          <img 
-                            src={hobby.images[1]} 
-                            alt={`${hobby.title} - Deadlift`}
-                            className="w-full h-[7.5rem] object-cover rounded-lg"
-                          />
-                        </div>
                         <img 
-                          src={hobby.images[2]} 
-                          alt={`${hobby.title} - UMass Powerlifting Team`}
+                          src={hobby.images[0]} 
+                          alt={`${hobby.title} - Bench Press`}
+                          className="w-full h-64 object-cover rounded-lg"
+                        />
+                        <img 
+                          src={hobby.images[1]} 
+                          alt={`${hobby.title} - Deadlift`}
                           className="w-full h-64 object-cover rounded-lg"
                         />
                       </div>
