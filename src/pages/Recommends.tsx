@@ -46,47 +46,12 @@ const recommendationsData = [
   {
     id: 5,
     title: "The Three-Body Problem",
-    author: "Liu Cixin",
-    type: "Book",
+    author: "Netflix",
+    type: "TV Show",
     category: "Science Fiction",
     description: "Mind-bending hard science fiction that combines physics, computer science, and philosophy. The technical concepts are brilliantly woven into the narrative.",
-    image: "/api/placeholder/300/400"
-  },
-  {
-    id: 6,
-    title: "Silicon Valley",
-    author: "HBO",
-    type: "TV Show",
-    category: "Comedy/Tech",
-    description: "Hilarious and surprisingly accurate portrayal of tech startup culture. Great insights into the challenges of building technology companies and the personalities involved.",
-    image: "/api/placeholder/400/300"
-  },
-  {
-    id: 7,
-    title: "Ex Machina",
-    author: "Alex Garland",
-    type: "Movie",
-    category: "Sci-Fi/AI",
-    description: "Thought-provoking exploration of artificial intelligence, consciousness, and ethics. Particularly relevant for anyone working in AI or machine learning.",
-    image: "/api/placeholder/400/300"
-  },
-  {
-    id: 8,
-    title: "Clean Code",
-    author: "Robert C. Martin",
-    type: "Book",
-    category: "Programming",
-    description: "Essential reading for any programmer. The principles apply beyond software to any engineering discipline where clarity and maintainability matter.",
-    image: "/api/placeholder/300/400"
-  },
-  {
-    id: 9,
-    title: "Westworld",
-    author: "HBO",
-    type: "TV Show",
-    category: "Sci-Fi/Drama",
-    description: "Complex narrative exploring consciousness, free will, and the nature of reality. Excellent for thinking about AI ethics and the future of technology.",
-    image: "/api/placeholder/400/300"
+    image: "/api/placeholder/400/300",
+    link: "https://share.google/qWTltnAcfrrk3TgWl"
   }
 ];
 
