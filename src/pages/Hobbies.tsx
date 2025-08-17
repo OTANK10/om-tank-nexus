@@ -128,6 +128,21 @@ const Hobbies = () => {
                           />
                         </div>
                       </div>
+                    ) : hobby.title === "Mechatronics Projects" ? (
+                      // Mechatronics layout - 2 images side by side
+                      <div className="grid grid-cols-2 gap-2">
+                        <img 
+                          src={hobby.images[0]} 
+                          alt={`${hobby.title} - Childhood robotics interest`}
+                          className="w-full h-64 object-cover rounded-lg"
+                          style={{ objectPosition: 'center 40%' }}
+                        />
+                        <img 
+                          src={hobby.images[1]} 
+                          alt={`${hobby.title} - Electronics lab setup`}
+                          className="w-full h-64 object-cover rounded-lg"
+                        />
+                      </div>
                     ) : (
                       // Powerlifting layout - 2 images side by side
                       <div className="grid grid-cols-2 gap-2">
