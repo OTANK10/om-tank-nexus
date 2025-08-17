@@ -38,19 +38,19 @@ const communityData = [
   },
   {
     id: 3,
-    title: "Code for Good Hackathon",
-    role: "Technical Judge & Mentor",
-    organization: "Various Organizations",
-    period: "2021 - Present",
-    impact: "Evaluated 100+ social impact projects",
-    description: "Provided technical guidance to teams developing solutions for social good. Focused on projects addressing education, healthcare, and environmental challenges.",
+    title: "Cooking Club",
+    role: "Active Member & Cultural Coordinator",
+    organization: "UMass Amherst",
+    period: "2022 - 2024",
+    impact: "Facilitated cultural exchange through cuisine",
+    description: "Active member who met weekly to explore diverse cuisines and foster cultural exchange. Introduced new recipes once a semester to the group, managed ingredient procurement, and helped members share their cultural cuisines, creating a welcoming space for culinary diversity.",
     stats: {
-      hackathonsJudged: "12",
-      teamsGuided: "30+",
-      winningSolutions: "5"
+      recipesIntroduced: "8+",
+      weeklyMeetings: "100+",
+      culturalDishes: "25+"
     },
-    image: "/api/placeholder/400/250",
-    skills: ["Technical Assessment", "Project Mentoring", "Social Impact"]
+    image: "/lovable-uploads/669e8e0d-4fd4-433f-a529-1f5a549e69da.png",
+    skills: ["Cultural Exchange", "Event Coordination", "Recipe Development"]
   },
   {
     id: 4,
