@@ -55,7 +55,7 @@ const hobbiesData = [
       "Considered for SEA competitive team",
       "High-level tactical gameplay and strategy"
     ],
-    mainImage: "/api/placeholder/600/400"
+    mainImage: "/lovable-uploads/5c7816de-b9a4-40b9-88c2-090fadd702cd.png"
   },
   {
     id: 5,
