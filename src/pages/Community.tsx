@@ -55,19 +55,20 @@ const communityData = [
   },
   {
     id: 4,
-    title: "Digital Literacy Initiative",
-    role: "Volunteer Instructor",
-    organization: "Community Center",
-    period: "2020 - 2022",
-    impact: "Taught 200+ seniors basic computer skills",
-    description: "Developed and delivered computer literacy programs for senior citizens, focusing on essential digital skills for modern life including internet safety and communication tools.",
+    title: "Powerlifting Club",
+    role: "Active Member",
+    organization: "UMass Amherst",
+    period: "2021 - 2023",
+    impact: "Competed at state level collegiate competition",
+    description: "Active member who regularly attended group meetings and shared training plans with fellow athletes. Participated in one state level collegiate competition, fostering camaraderie and team spirit within the powerlifting community.",
     stats: {
-      seniorsTaught: "200+",
-      hoursVolunteered: "300+",
-      programsCreated: "6"
+      meetingsAttended: "50+",
+      competitionsParticipated: "1",
+      teamMembers: "30+"
     },
-    image: "/api/placeholder/400/250",
-    skills: ["Teaching", "Curriculum Design", "Community Outreach"]
+    image: "/lovable-uploads/025b5d77-315d-4592-9eb4-c960da730de7.png",
+    skills: ["Athletic Training", "Team Collaboration", "Competition Preparation"],
+    link: "https://umassamherst.campuslabs.com/engage/organization/umpl"
   }
 ];
 
