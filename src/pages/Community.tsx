@@ -55,20 +55,20 @@ const communityData = [
   },
   {
     id: 4,
-    title: "Powerlifting Club",
-    role: "Active Member",
+    title: "iCONS Program",
+    role: "Student Researcher",
     organization: "UMass Amherst",
-    period: "2021 - 2023",
-    impact: "Competed at state level collegiate competition",
-    description: "Active member who regularly attended group meetings and shared training plans with fellow athletes. Participated in one state level collegiate competition, fostering camaraderie and team spirit within the powerlifting community.",
+    period: "2023 - 2025",
+    impact: "Developing AI-powered biomedical solutions",
+    description: "Participating in the Integrated Concentration in Science (iCONS) program, focusing on interdisciplinary research that combines STEM and social impact. Currently working on projects investigating copper-sequestering bacteria to treat e-waste, developing AI tools for detecting anthracnose in banana cells, and creating sustainable energy solutions in Los Angeles.",
     stats: {
-      meetingsAttended: "50+",
-      competitionsParticipated: "1",
-      teamMembers: "30+"
+      researchProjects: "4+",
+      accuracyRate: "85%+",
+      collaborations: "3"
     },
-    image: "/lovable-uploads/025b5d77-315d-4592-9eb4-c960da730de7.png",
-    skills: ["Athletic Training", "Team Collaboration", "Competition Preparation"],
-    link: "https://umassamherst.campuslabs.com/engage/organization/umpl"
+    image: "/lovable-uploads/83ce3140-6aa8-4032-a140-0d664c2a4aee.png",
+    skills: ["Scientific Research", "AI/Machine Learning", "Biomedical Innovation", "Sustainability"],
+    link: "https://icons.cns.umass.edu/homepage"
   }
 ];
 
