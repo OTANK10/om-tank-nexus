@@ -25,13 +25,18 @@ const hobbiesData = [
     id: 2,
     title: "Trekking & Hiking",
     icon: <Mountain className="w-6 h-6" />,
-    description: "Love exploring nature's beauty through challenging treks and scenic hikes. Whether it's conquering mountain peaks or discovering hidden trails, trekking provides the perfect escape and physical challenge while connecting with the natural world.",
+    description: "I enjoy escaping the concrete world and embracing the struggle that nature provides. I've trekked across multiple locations in India and Central Asia, with my most memorable adventures being the trek to Mt Kanchenjunga Base Camp in the Himalayas and the trek to the Dalai Lama temple. Here in the States, I've explored the Norwottuck mountain range as much as possible, finding solace and challenge in every trail.",
     highlights: [
-      "Completed multiple challenging mountain treks",
-      "Regular weekend hiking enthusiast",
-      "Nature photography during expeditions"
+      "Trekked to Mt Kanchenjunga Base Camp, Himalayas",
+      "Completed trek to Dalai Lama temple",
+      "Explored multiple locations across India and Central Asia",
+      "Regular hiker of Norwottuck mountain range in Massachusetts"
     ],
-    mainImage: "/api/placeholder/600/400"
+    images: [
+      "/lovable-uploads/7e251dc3-a3d0-43f1-930e-c11aad9e175c.png",
+      "/lovable-uploads/08294ee7-0adb-4761-b261-ab51332bb89f.png"
+    ],
+    mainImage: "/lovable-uploads/7e251dc3-a3d0-43f1-930e-c11aad9e175c.png"
   },
   {
     id: 3,
@@ -127,6 +132,20 @@ const Hobbies = () => {
                             className="w-full h-[7.5rem] object-cover rounded-lg"
                           />
                         </div>
+                      </div>
+                    ) : hobby.title === "Trekking & Hiking" ? (
+                      // Trekking layout - 2 images side by side
+                      <div className="grid grid-cols-2 gap-2">
+                        <img 
+                          src={hobby.images[0]} 
+                          alt={`${hobby.title} - Mountain landscape`}
+                          className="w-full h-64 object-cover rounded-lg"
+                        />
+                        <img 
+                          src={hobby.images[1]} 
+                          alt={`${hobby.title} - Temple trek`}
+                          className="w-full h-64 object-cover rounded-lg"
+                        />
                       </div>
                     ) : hobby.title === "Mechatronics Projects" ? (
                       // Mechatronics layout - 2 images side by side
