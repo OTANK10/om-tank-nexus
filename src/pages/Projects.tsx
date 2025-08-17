@@ -7,7 +7,6 @@ const projectsData = [
   {
     id: 3,
     title: "GNN based Circuit Timing Prediction for VLSI Design",
-    icon: <Brain className="w-6 h-6" />,
     category: "Research",
     description: "Develop a Graph Neural Network architecture using PyTorch Geometric to predict gate delays in digital circuits, to achieve <10% mean absolute error on synthetic circuit benchmarks.",
     highlights: [
@@ -24,7 +23,6 @@ const projectsData = [
   {
     id: 4,
     title: "GPU-Accelerated RTL Logic Simulator based on Nvidia's GEM",
-    icon: <Cpu className="w-6 h-6" />,
     category: "Hardware",
     description: "Develop a CUDA-based RTL simulator for basic Verilog circuits, translating RTL into logic gate models and design a custom logic executor mimicking a simplified VLIW architecture to enable word-level parallelism on Nvidia GPUs.",
     highlights: [
@@ -41,7 +39,6 @@ const projectsData = [
   {
     id: 5,
     title: "UVM-Based Verification Environment for 32-bit Aligner",
-    icon: <Code className="w-6 h-6" />,
     category: "Hardware",
     description: "Developed modular UVM components including RX/TX agents, predictors, register model, and scoreboard to enable full stimulus-response validation.",
     highlights: [
@@ -58,7 +55,6 @@ const projectsData = [
   {
     id: 6,
     title: "4-Tap FIR Filter on Intel DE1-SoC FPGA",
-    icon: <Microchip className="w-6 h-6" />,
     category: "Hardware",
     description: "Designed a 4-tap FIR filter using a scalable modular architecture with ARM Cortex-A9 HPS integration, real-time testing, and BRAM2S6 displays for 75-segment LEDs.",
     highlights: [
@@ -75,7 +71,6 @@ const projectsData = [
   {
     id: 7,
     title: "Hardware Trojan Detection using Side-Channels",
-    icon: <Zap className="w-6 h-6" />,
     category: "Security",
     description: "Developed novel approach to detect hardware Trojans using simulation-based side-channel features achieving 93.5% detection accuracy across multiple circuits by PCA dimensionality reduction on behavioral data.",
     highlights: [
@@ -92,7 +87,6 @@ const projectsData = [
   {
     id: 12,
     title: "Cache Performance Analysis: Sorting Algorithms Under Different Memory Hierarchies",
-    icon: <Cpu className="w-6 h-6" />,
     category: "Hardware",
     description: "In-depth analysis of cache performance for Quicksort and Radix Sort algorithms using Valgrind's Cachegrind tool, examining how cache organization parameters impact algorithm performance across varying data sizes.",
     highlights: [
@@ -109,7 +103,6 @@ const projectsData = [
   {
     id: 11,
     title: "Edge Computing: Research Challenges and Future Directions",
-    icon: <Brain className="w-6 h-6" />,
     category: "Research",
     description: "A commentary on the current paradigm of edge computing, examining core challenges including efficient resource management, real-time task processing, and adaptive system control in resource-constrained environments.",
     highlights: [
@@ -126,7 +119,6 @@ const projectsData = [
   {
     id: 8,
     title: "BananAI - Detection of Anthracnose Infected Banana Cells using AI",
-    icon: <Brain className="w-6 h-6" />,
     category: "AI/ML",
     description: "Architected machine learning pipeline utilizing Meta's Segment Anything Model (SAM) for automated lesion segmentation in plant pathology.",
     highlights: [
@@ -143,7 +135,6 @@ const projectsData = [
   {
     id: 9,
     title: "Analog Circuits Design for Random Number Generation",
-    icon: <Microchip className="w-6 h-6" />,
     category: "Hardware",
     description: "Designed a RNG using Linear Feedback Shift Registers for pseudo-random and Ring Oscillators for true rng, implemented on Altera SoC using Quartus Prime and ModelSim.",
     highlights: [
@@ -160,7 +151,6 @@ const projectsData = [
   {
     id: 13,
     title: "BLAST Device Characterization and Testing",
-    icon: <Brain className="w-6 h-6" />,
     category: "Research",
     description: "Research work on BLAST (Biocompatible biLayer graphene-based Artificial Synaptic Transistor) devices - a breakthrough in neuromorphic computing that mimics brain synapses using graphene and Nafion materials.",
     highlights: [
@@ -177,7 +167,6 @@ const projectsData = [
   {
     id: 10,
     title: "Federated Learning on Heterogeneous Sensors",
-    icon: <Brain className="w-6 h-6" />,
     category: "AI/ML",
     description: "Analyzed data heterogeneity and adversarial robustness in federated learning systems across 5 datasets, revealing trade-offs between model performance, convergence efficiency, and attack resilience in distributed environments.",
     highlights: [
@@ -296,9 +285,11 @@ const Projects = () => {
                 ) : (
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
                     <div className="text-center">
-                      <div className="text-primary/60 mb-3 transform group-hover:scale-110 transition-transform duration-300">
-                        {project.icon}
-                      </div>
+                      {project.icon && (
+                        <div className="text-primary/60 mb-3 transform group-hover:scale-110 transition-transform duration-300">
+                          {project.icon}
+                        </div>
+                      )}
                       <div className="text-lg font-bold text-primary/80">
                         {project.title}
                       </div>
@@ -325,9 +316,11 @@ const Projects = () => {
 
               <div className="p-6">
                 {/* Icon */}
-                <div className="text-xl font-bold text-foreground mb-3 flex items-center">
-                  {project.icon}
-                </div>
+                {project.icon && (
+                  <div className="text-xl font-bold text-foreground mb-3 flex items-center">
+                    {project.icon}
+                  </div>
+                )}
 
                 {/* Description */}
                 <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
