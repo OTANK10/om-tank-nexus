@@ -3,17 +3,17 @@ import { Github, Linkedin, Download, ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative circuit-bg">
+    <section className="min-h-screen flex items-center justify-center relative circuit-bg py-20 md:py-0">
       {/* Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-accent/5 rounded-full blur-3xl animate-float" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 md:w-64 md:h-64 bg-accent/5 rounded-full blur-3xl animate-float" />
+        <div className="absolute bottom-1/4 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
       </div>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Profile Image */}
-        <div className="mb-8 animate-fade-in">
-          <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-glow">
+        <div className="mb-6 md:mb-8 animate-fade-in">
+          <div className="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-glow">
             <img 
               src="/lovable-uploads/4e0ac380-d36e-4687-a1d0-67d21723ebef.png" 
               alt="Om Tank - Computer Engineering Graduate"
@@ -23,18 +23,20 @@ const Hero = () => {
         </div>
 
         {/* Main Heading */}
-        <div className="mb-6 animate-slide-in-left">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+        <div className="mb-4 md:mb-6 animate-slide-in-left">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-3 md:mb-4">
             Hi, I'm <span className="gradient-text">Om</span>
           </h1>
-          <h2 className="text-xl md:text-2xl text-muted-foreground font-medium whitespace-nowrap">
-            Computer Engineering Graduate | VLSI Design | AI-Hardware Co-optimization
+          <h2 className="text-base sm:text-xl md:text-2xl text-muted-foreground font-medium">
+            <span className="block sm:hidden">Computer Engineering Graduate</span>
+            <span className="block sm:hidden">VLSI Design | AI-Hardware Co-optimization</span>
+            <span className="hidden sm:block">Computer Engineering Graduate | VLSI Design | AI-Hardware Co-optimization</span>
           </h2>
         </div>
 
         {/* Elevator Pitch */}
-        <div className="mb-8 animate-slide-in-right">
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+        <div className="mb-6 md:mb-8 animate-slide-in-right">
+          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Passionate about bridging the gap between hardware and software through innovative 
             <span className="text-accent font-medium"> VLSI design</span> and 
             <span className="text-primary font-medium"> AI-hardware optimization</span>. 
@@ -81,7 +83,7 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="mt-16 flex justify-center animate-bounce">
+        <div className="mt-8 md:mt-16 flex justify-center animate-bounce">
           <button 
             onClick={() => {
               const experienceSection = document.querySelector('[data-section="experience"]');
