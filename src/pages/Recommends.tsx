@@ -227,30 +227,9 @@ const Recommends = () => {
                 </div>
 
                 {/* Description */}
-                <p className="text-muted-foreground mb-4 leading-relaxed text-sm">
+                <p className="text-muted-foreground mb-6 leading-relaxed text-sm">
                   {item.description}
                 </p>
-
-                {/* Key Takeaways */}
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold mb-2 text-foreground">Key Takeaways</h4>
-                  <ul className="space-y-1">
-                    {item.keyTakeaways.map((takeaway, idx) => (
-                      <li key={idx} className="text-xs text-muted-foreground flex items-start">
-                        <span className="text-accent mr-2 font-bold">•</span>
-                        {takeaway}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                {/* Recommended For */}
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold mb-2 text-foreground">Recommended For</h4>
-                  <div className="text-xs text-muted-foreground">
-                    {item.recommendedFor}
-                  </div>
-                </div>
 
                 {/* Action Button */}
                 <Button 
