@@ -18,7 +18,8 @@ const communityData = [
       culturalShowcases: "8"
     },
     image: "/lovable-uploads/8c5e2802-f890-4c9d-88e5-8da94939359d.png",
-    skills: ["Event Management", "Community Building", "Cultural Programming"]
+    skills: ["Event Management", "Community Building", "Cultural Programming"],
+    link: "https://umassamherst.campuslabs.com/engage/organization/indianstudentsunion"
   },
   {
     id: 2,
