@@ -10,59 +10,71 @@ const Hero = () => {
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
         
         {/* Floating Company Logos */}
-        <div className="absolute inset-0 opacity-30">
+        <div className="absolute inset-0 opacity-40">
           {/* UMass Logo */}
           <div className="absolute top-[10%] left-[5%] animate-float" style={{ animationDelay: '0s', animationDuration: '15s' }}>
-            <img 
-              src="/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png" 
-              alt="UMass Amherst logo"
-              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-            />
+            <div className="relative p-2 rounded-full bg-gradient-to-br from-blue-500/20 to-indigo-600/20 backdrop-blur-sm border border-blue-400/30 shadow-lg shadow-blue-500/25 hover:shadow-blue-500/50 transition-all duration-300 hover:scale-110">
+              <img 
+                src="/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png" 
+                alt="UMass Amherst logo"
+                className="w-6 h-6 md:w-8 md:h-8 object-contain transition-all duration-300 hover:brightness-110"
+              />
+            </div>
           </div>
           
           {/* AMD Logo */}
           <div className="absolute top-[20%] right-[8%] animate-float" style={{ animationDelay: '2s', animationDuration: '18s' }}>
-            <img 
-              src="/lovable-uploads/7b7ab3a5-2e6c-4b1d-bb5b-5272972a273c.png" 
-              alt="AMD logo"
-              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-            />
+            <div className="relative p-2 rounded-full bg-gradient-to-br from-red-500/20 to-orange-600/20 backdrop-blur-sm border border-red-400/30 shadow-lg shadow-red-500/25 hover:shadow-red-500/50 transition-all duration-300 hover:scale-110">
+              <img 
+                src="/lovable-uploads/7b7ab3a5-2e6c-4b1d-bb5b-5272972a273c.png" 
+                alt="AMD logo"
+                className="w-6 h-6 md:w-8 md:h-8 object-contain transition-all duration-300 hover:brightness-110"
+              />
+            </div>
           </div>
           
           {/* Neely Logo */}
           <div className="absolute bottom-[15%] left-[10%] animate-float" style={{ animationDelay: '4s', animationDuration: '20s' }}>
-            <img 
-              src="/lovable-uploads/92b24c52-5193-4847-a4c9-a8379f244495.png" 
-              alt="Neely & Daughters logo"
-              className="w-12 h-6 md:w-16 md:h-8 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-            />
+            <div className="relative p-2 rounded-lg bg-gradient-to-br from-green-500/20 to-emerald-600/20 backdrop-blur-sm border border-green-400/30 shadow-lg shadow-green-500/25 hover:shadow-green-500/50 transition-all duration-300 hover:scale-110">
+              <img 
+                src="/lovable-uploads/92b24c52-5193-4847-a4c9-a8379f244495.png" 
+                alt="Neely & Daughters logo"
+                className="w-10 h-5 md:w-12 md:h-6 object-contain transition-all duration-300 hover:brightness-110"
+              />
+            </div>
           </div>
           
           {/* M5 Makerspace Logo */}
           <div className="absolute bottom-[25%] right-[12%] animate-float" style={{ animationDelay: '6s', animationDuration: '16s' }}>
-            <img 
-              src="/lovable-uploads/7f3d2ffd-78a2-415b-8ae0-083eea674d9f.png" 
-              alt="M5 Makerspace logo"
-              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-            />
+            <div className="relative p-2 rounded-full bg-gradient-to-br from-purple-500/20 to-violet-600/20 backdrop-blur-sm border border-purple-400/30 shadow-lg shadow-purple-500/25 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-110">
+              <img 
+                src="/lovable-uploads/7f3d2ffd-78a2-415b-8ae0-083eea674d9f.png" 
+                alt="M5 Makerspace logo"
+                className="w-6 h-6 md:w-8 md:h-8 object-contain transition-all duration-300 hover:brightness-110"
+              />
+            </div>
           </div>
           
           {/* Tyre YC Startup Logo */}
           <div className="absolute top-[40%] left-[8%] animate-float" style={{ animationDelay: '8s', animationDuration: '22s' }}>
-            <img 
-              src="/lovable-uploads/f6fab023-9a50-4a7f-bc28-9a15ff35cbda.png" 
-              alt="Tyre YC Startup logo"
-              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-            />
+            <div className="relative p-2 rounded-full bg-gradient-to-br from-cyan-500/20 to-teal-600/20 backdrop-blur-sm border border-cyan-400/30 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/50 transition-all duration-300 hover:scale-110">
+              <img 
+                src="/lovable-uploads/f6fab023-9a50-4a7f-bc28-9a15ff35cbda.png" 
+                alt="Tyre YC Startup logo"
+                className="w-6 h-6 md:w-8 md:h-8 object-contain transition-all duration-300 hover:brightness-110"
+              />
+            </div>
           </div>
           
           {/* Axaram Codelabs Logo */}
           <div className="absolute top-[55%] right-[15%] animate-float" style={{ animationDelay: '10s', animationDuration: '14s' }}>
-            <img 
-              src="/lovable-uploads/24d4654e-0ca1-482e-8d06-92fe1b554be3.png" 
-              alt="Axaram Codelabs logo"
-              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-            />
+            <div className="relative p-2 rounded-full bg-gradient-to-br from-yellow-500/20 to-amber-600/20 backdrop-blur-sm border border-yellow-400/30 shadow-lg shadow-yellow-500/25 hover:shadow-yellow-500/50 transition-all duration-300 hover:scale-110">
+              <img 
+                src="/lovable-uploads/24d4654e-0ca1-482e-8d06-92fe1b554be3.png" 
+                alt="Axaram Codelabs logo"
+                className="w-6 h-6 md:w-8 md:h-8 object-contain transition-all duration-300 hover:brightness-110"
+              />
+            </div>
           </div>
         </div>
       </div>
