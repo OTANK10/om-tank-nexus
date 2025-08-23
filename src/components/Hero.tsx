@@ -9,69 +9,60 @@ const Hero = () => {
         <div className="absolute top-1/4 left-1/4 w-32 h-32 md:w-64 md:h-64 bg-accent/5 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-1/4 right-1/4 w-48 h-48 md:w-96 md:h-96 bg-primary/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
         
-        {/* Floating Technology Logos */}
-        <div className="absolute inset-0 opacity-20">
-          {/* C++ Logo */}
-          <div className="absolute top-[15%] left-[12%] animate-float" style={{ animationDelay: '0s', animationDuration: '8s' }}>
-            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-lg">
-              C++
-            </div>
+        {/* Floating Company Logos */}
+        <div className="absolute inset-0 opacity-30">
+          {/* UMass Logo */}
+          <div className="absolute top-[10%] left-[5%] animate-float" style={{ animationDelay: '0s', animationDuration: '15s' }}>
+            <img 
+              src="/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png" 
+              alt="UMass Amherst logo"
+              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            />
           </div>
           
-          {/* Python Logo */}
-          <div className="absolute top-[25%] right-[15%] animate-float" style={{ animationDelay: '1s', animationDuration: '10s' }}>
-            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-yellow-400 to-blue-500 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-lg">
-              PY
-            </div>
+          {/* AMD Logo */}
+          <div className="absolute top-[20%] right-[8%] animate-float" style={{ animationDelay: '2s', animationDuration: '18s' }}>
+            <img 
+              src="/lovable-uploads/7b7ab3a5-2e6c-4b1d-bb5b-5272972a273c.png" 
+              alt="AMD logo"
+              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            />
           </div>
           
-          {/* AI/ML */}
-          <div className="absolute top-[45%] left-[8%] animate-float" style={{ animationDelay: '2s', animationDuration: '9s' }}>
-            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-lg">
-              AI
-            </div>
+          {/* Neely Logo */}
+          <div className="absolute bottom-[15%] left-[10%] animate-float" style={{ animationDelay: '4s', animationDuration: '20s' }}>
+            <img 
+              src="/lovable-uploads/92b24c52-5193-4847-a4c9-a8379f244495.png" 
+              alt="Neely & Daughters logo"
+              className="w-12 h-6 md:w-16 md:h-8 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            />
           </div>
           
-          {/* SystemVerilog */}
-          <div className="absolute bottom-[35%] right-[12%] animate-float" style={{ animationDelay: '3s', animationDuration: '11s' }}>
-            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-lg">
-              SV
-            </div>
+          {/* M5 Makerspace Logo */}
+          <div className="absolute bottom-[25%] right-[12%] animate-float" style={{ animationDelay: '6s', animationDuration: '16s' }}>
+            <img 
+              src="/lovable-uploads/7f3d2ffd-78a2-415b-8ae0-083eea674d9f.png" 
+              alt="M5 Makerspace logo"
+              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            />
           </div>
           
-          {/* PCB Design */}
-          <div className="absolute bottom-[15%] left-[18%] animate-float" style={{ animationDelay: '4s', animationDuration: '7s' }}>
-            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-orange-500 to-red-500 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-lg">
-              PCB
-            </div>
+          {/* Tyre YC Startup Logo */}
+          <div className="absolute top-[40%] left-[8%] animate-float" style={{ animationDelay: '8s', animationDuration: '22s' }}>
+            <img 
+              src="/lovable-uploads/f6fab023-9a50-4a7f-bc28-9a15ff35cbda.png" 
+              alt="Tyre YC Startup logo"
+              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            />
           </div>
           
-          {/* Embedded */}
-          <div className="absolute top-[35%] right-[25%] animate-float" style={{ animationDelay: '5s', animationDuration: '12s' }}>
-            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-lg">
-              EMB
-            </div>
-          </div>
-          
-          {/* VLSI */}
-          <div className="absolute bottom-[45%] left-[25%] animate-float" style={{ animationDelay: '6s', animationDuration: '13s' }}>
-            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-lg">
-              VLSI
-            </div>
-          </div>
-          
-          {/* Hardware */}
-          <div className="absolute top-[55%] left-[15%] animate-float" style={{ animationDelay: '7s', animationDuration: '6s' }}>
-            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-gray-600 to-gray-800 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-lg">
-              HW
-            </div>
-          </div>
-          
-          {/* Research */}
-          <div className="absolute bottom-[25%] right-[8%] animate-float" style={{ animationDelay: '8s', animationDuration: '14s' }}>
-            <div className="w-8 h-8 md:w-12 md:h-12 bg-gradient-to-br from-pink-500 to-rose-500 rounded-lg flex items-center justify-center text-white font-bold text-xs md:text-sm shadow-lg">
-              R&D
-            </div>
+          {/* Axaram Codelabs Logo */}
+          <div className="absolute top-[55%] right-[15%] animate-float" style={{ animationDelay: '10s', animationDuration: '14s' }}>
+            <img 
+              src="/lovable-uploads/24d4654e-0ca1-482e-8d06-92fe1b554be3.png" 
+              alt="Axaram Codelabs logo"
+              className="w-8 h-8 md:w-12 md:h-12 object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
+            />
           </div>
         </div>
       </div>
