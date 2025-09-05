@@ -8,7 +8,7 @@ const hobbiesData = [
     id: 1,
     title: "Cooking",
     icon: <ChefHat className="w-6 h-6" />,
-    description: "Passionate about exploring diverse cuisines and experimenting with flavors from around the world. From traditional Indian dishes to international fusion, I love creating memorable culinary experiences and sharing them with friends through cooking sessions and cultural exchanges.",
+    description: "Passionate about exploring diverse cuisines and experimenting with flavors from around the world. From traditional Indian dishes to international fusion, I love creating memorable culinary experiences and sharing them with friends through cooking sessions and cultural exchanges. I found this passion because of my roommate and friend Kenneth Lin who desires to open their own multicuisine restaurant.",
     highlights: [
       "Introduced 8+ new recipes to UMass Cooking Club",
       "Organized weekly cooking sessions (2022-2024)",
