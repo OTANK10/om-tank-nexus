@@ -3,7 +3,7 @@ import { Github, Linkedin, Download, ChevronDown } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative circuit-bg py-20 md:py-0">
+    <section className="min-h-screen flex items-center justify-center relative circuit-bg py-20 md:pt-16 md:pb-0">
       {/* Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 md:w-64 md:h-64 bg-accent/5 rounded-full blur-3xl animate-float" />
