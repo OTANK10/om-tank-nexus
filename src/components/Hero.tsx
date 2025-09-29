@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/enhanced-button";
-import { Github, Linkedin, Download, ChevronDown } from "lucide-react";
+import { Github, Linkedin, GraduationCap, ChevronDown } from "lucide-react";
+import EducationDialog from "./EducationDialog";
 
 const Hero = () => {
   return (
@@ -123,20 +124,16 @@ const Hero = () => {
             GitHub
           </Button>
           
-          <Button 
-            variant="tech" 
-            size="lg"
-            className="w-full sm:w-auto"
-            onClick={() => {
-              const link = document.createElement('a');
-              link.href = '/Om_Tank_CV.pdf';
-              link.download = 'Om_Tank_CV.pdf';
-              link.click();
-            }}
-          >
-            <Download className="mr-2" />
-            Download CV
-          </Button>
+          <EducationDialog>
+            <Button 
+              variant="tech" 
+              size="lg"
+              className="w-full sm:w-auto"
+            >
+              <GraduationCap className="mr-2" />
+              Education
+            </Button>
+          </EducationDialog>
         </div>
 
         {/* Scroll Indicator */}
