@@ -1,8 +1,9 @@
 import { Button } from "@/components/ui/enhanced-button";
 import { Github, Linkedin, GraduationCap, ChevronDown } from "lucide-react";
 import EducationDialog from "./EducationDialog";
-import umassLogo from "@/assets/umass-logo.png";
-import cmuLogo from "@/assets/cmu-logo.jpg";
+import umassLogoNew from "@/assets/umass-logo-new.png";
+import cmuLogoNew from "@/assets/cmu-logo-new.png";
+import scottieImage from "@/assets/scottie-dog.png";
 
 const Hero = () => {
   return (
@@ -71,18 +72,18 @@ const Hero = () => {
           {/* Carnegie Mellon Logo */}
           <div className="absolute top-[35%] right-[5%] animate-float" style={{ animationDelay: '12s', animationDuration: '17s' }}>
             <img 
-              src={cmuLogo} 
+              src={cmuLogoNew} 
               alt="Carnegie Mellon University logo"
-              className="w-8 h-8 md:w-12 md:h-12 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
+              className="w-12 h-12 md:w-16 md:h-16 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
             />
           </div>
           
           {/* UMass Logo */}
           <div className="absolute bottom-[35%] left-[15%] animate-float" style={{ animationDelay: '14s', animationDuration: '19s' }}>
             <img 
-              src={umassLogo} 
+              src={umassLogoNew} 
               alt="UMass Amherst logo"
-              className="w-8 h-8 md:w-12 md:h-12 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
+              className="w-12 h-12 md:w-16 md:h-16 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
             />
           </div>
         </div>
@@ -123,7 +124,16 @@ const Hero = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-scale-in">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-scale-in relative">
+          {/* Scottie the Dog - positioned near LinkedIn button */}
+          <div className="absolute bottom-2 left-0 sm:left-[-120px] animate-float opacity-70" style={{ animationDelay: '1s', animationDuration: '20s' }}>
+            <img 
+              src={scottieImage} 
+              alt="Scottie - Carnegie Mellon University mascot"
+              className="w-16 h-12 md:w-20 md:h-15 object-contain transition-all duration-300 hover:scale-110"
+            />
+          </div>
+          
           <Button 
             variant="hero" 
             size="lg"
