@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/enhanced-button";
 import { Github, Linkedin, GraduationCap, ChevronDown } from "lucide-react";
 import EducationDialog from "./EducationDialog";
+import umassLogo from "@/assets/umass-logo.png";
+import cmuLogo from "@/assets/cmu-logo.jpg";
 
 const Hero = () => {
   return (
@@ -62,6 +64,24 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/24d4654e-0ca1-482e-8d06-92fe1b554be3.png" 
               alt="Axaram Codelabs logo"
+              className="w-8 h-8 md:w-12 md:h-12 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
+            />
+          </div>
+          
+          {/* Carnegie Mellon Logo */}
+          <div className="absolute top-[35%] right-[5%] animate-float" style={{ animationDelay: '12s', animationDuration: '17s' }}>
+            <img 
+              src={cmuLogo} 
+              alt="Carnegie Mellon University logo"
+              className="w-8 h-8 md:w-12 md:h-12 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
+            />
+          </div>
+          
+          {/* UMass Logo */}
+          <div className="absolute bottom-[35%] left-[15%] animate-float" style={{ animationDelay: '14s', animationDuration: '19s' }}>
+            <img 
+              src={umassLogo} 
+              alt="UMass Amherst logo"
               className="w-8 h-8 md:w-12 md:h-12 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
             />
           </div>
