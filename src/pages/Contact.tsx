@@ -99,8 +99,8 @@ const Contact = () => {
               <div className="text-accent mb-3 flex justify-center">
                 <GraduationCap className="w-8 h-8" />
               </div>
-              <h4 className="font-semibold mb-2">Graduate Programs</h4>
-              <p className="text-sm text-muted-foreground">Research opportunities, program discussions, academic collaboration</p>
+              <h4 className="font-semibold mb-2">Graduate Studies</h4>
+              <p className="text-sm text-muted-foreground">Committed to Carnegie Mellon University for MS in ECE, starting advanced study program</p>
             </div>
             
             <div className="text-center">
