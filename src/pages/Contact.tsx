@@ -67,10 +67,10 @@ const Contact = () => {
             </div>
             <h3 className="text-lg font-semibold mb-2">Phone</h3>
             <a 
-              href="tel:4133445438"
+              href="tel:+14133445438"
               className="text-foreground hover:text-primary transition-colors"
             >
-              (413) 344-5438
+              +1 (413) 344-5438
             </a>
           </Card>
 
@@ -94,21 +94,29 @@ const Contact = () => {
         {/* What I'm Open To */}
         <Card className="p-8 shadow-medium mb-16 animate-fade-in">
           <h3 className="text-2xl font-bold mb-6 text-center">What I'm Open To</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             <div className="text-center">
               <div className="text-accent mb-3 flex justify-center">
                 <GraduationCap className="w-8 h-8" />
               </div>
-              <h4 className="font-semibold mb-2">Graduate Studies</h4>
-              <p className="text-sm text-muted-foreground">Committed to Carnegie Mellon University for MS in ECE, starting advanced study program</p>
+              <h4 className="font-semibold mb-2">Graduate Programs</h4>
+              <p className="text-sm text-muted-foreground">Research opportunities, program discussions, academic collaboration</p>
             </div>
             
             <div className="text-center">
               <div className="text-accent mb-3 flex justify-center">
                 <Briefcase className="w-8 h-8" />
               </div>
-              <h4 className="font-semibold mb-2">Professional Opportunities</h4>
-              <p className="text-sm text-muted-foreground">Internships, full-time positions, consulting projects</p>
+              <h4 className="font-semibold mb-2">Research Opportunities</h4>
+              <p className="text-sm text-muted-foreground">VLSI design, AI-hardware optimization, academic research projects</p>
+            </div>
+
+            <div className="text-center">
+              <div className="text-accent mb-3 flex justify-center">
+                <Briefcase className="w-8 h-8" />
+              </div>
+              <h4 className="font-semibold mb-2">Internship Opportunities</h4>
+              <p className="text-sm text-muted-foreground">Summer internships, co-op programs, industry experience</p>
             </div>
             
             <div className="text-center">
