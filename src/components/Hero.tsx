@@ -7,7 +7,7 @@ import scottieImage from "@/assets/scottie-dog.png";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative circuit-bg py-20 md:pt-16 md:pb-0">
+    <section className="min-h-screen flex items-center justify-center relative circuit-bg py-20 md:pt-32 md:pb-0">
       {/* Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 md:w-64 md:h-64 bg-accent/5 rounded-full blur-3xl animate-float" />
@@ -73,16 +73,16 @@ const Hero = () => {
             />
             
             {/* Carnegie Mellon Logo - Top Left */}
-            <div className="absolute -top-2 -left-2 md:-top-4 md:-left-4">
+            <div className="absolute -top-2 -left-2 md:-top-8 md:-left-8">
               <img 
                 src={cmuLogoNew} 
                 alt="Carnegie Mellon University"
-                className="w-12 h-12 md:w-16 md:h-16 object-contain opacity-40"
+                className="w-12 h-12 md:w-24 md:h-24 object-contain opacity-80"
               />
             </div>
             
             {/* UMass Logo - Bottom Right */}
-            <div className="absolute -bottom-2 -right-2 md:-bottom-4 md:-right-4">
+            <div className="absolute -bottom-2 -right-2 md:-bottom-8 md:-right-8">
               <img 
                 src={umassLogoNew} 
                 alt="UMass Amherst"
