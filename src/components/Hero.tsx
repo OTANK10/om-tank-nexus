@@ -91,13 +91,31 @@ const Hero = () => {
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
         {/* Profile Image */}
-        <div className="mb-6 md:mb-8 animate-fade-in">
-          <div className="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-glow">
+        <div className="mb-6 md:mb-8 animate-fade-in relative">
+          <div className="w-32 h-32 md:w-48 md:h-48 mx-auto rounded-full bg-gradient-to-br from-primary to-accent p-1 shadow-glow relative">
             <img 
               src="/lovable-uploads/4e0ac380-d36e-4687-a1d0-67d21723ebef.png" 
               alt="Om Tank - Computer Engineering Graduate"
               className="w-full h-full rounded-full object-cover"
             />
+            
+            {/* Carnegie Mellon Logo - Top Left */}
+            <div className="absolute -top-2 -left-2 md:-top-4 md:-left-4">
+              <img 
+                src={cmuLogoNew} 
+                alt="Carnegie Mellon University"
+                className="w-12 h-12 md:w-16 md:h-16 object-contain opacity-40"
+              />
+            </div>
+            
+            {/* UMass Logo - Bottom Right */}
+            <div className="absolute -bottom-2 -right-2 md:-bottom-4 md:-right-4">
+              <img 
+                src={umassLogoNew} 
+                alt="UMass Amherst"
+                className="w-12 h-12 md:w-16 md:h-16 object-contain opacity-60"
+              />
+            </div>
           </div>
         </div>
 
@@ -125,14 +143,6 @@ const Hero = () => {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-scale-in relative">
-          {/* Scottie the Dog - positioned near LinkedIn button */}
-          <div className="absolute bottom-2 left-0 sm:left-[-120px] animate-float opacity-70" style={{ animationDelay: '1s', animationDuration: '20s' }}>
-            <img 
-              src={scottieImage} 
-              alt="Scottie - Carnegie Mellon University mascot"
-              className="w-16 h-12 md:w-20 md:h-15 object-contain transition-all duration-300 hover:scale-110"
-            />
-          </div>
           
           <Button 
             variant="hero" 
@@ -167,7 +177,16 @@ const Hero = () => {
         </div>
 
         {/* Scroll Indicator */}
-        <div className="mt-8 md:mt-16 flex justify-center animate-bounce">
+        <div className="mt-8 md:mt-16 flex justify-center animate-bounce relative">
+          {/* Scottie the Dog - positioned at bottom border */}
+          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 animate-float opacity-70" style={{ animationDelay: '1s', animationDuration: '20s' }}>
+            <img 
+              src={scottieImage} 
+              alt="Scottie - Carnegie Mellon University mascot"
+              className="w-20 h-16 md:w-24 md:h-20 object-contain transition-all duration-300 hover:scale-110"
+            />
+          </div>
+          
           <button 
             onClick={() => {
               const experienceSection = document.querySelector('[data-section="experience"]');
