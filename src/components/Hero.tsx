@@ -82,7 +82,7 @@ const Hero = () => {
             </div>
             
             {/* UMass Logo - Bottom Right */}
-            <div className="absolute -bottom-2 -right-2 md:-bottom-8 md:-right-8">
+            <div className="absolute -bottom-2 -right-2 md:-bottom-8 md:-right-12">
               <img 
                 src={umassLogoNew} 
                 alt="UMass Amherst"
