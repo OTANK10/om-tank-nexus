@@ -73,7 +73,7 @@ const Hero = () => {
             />
             
             {/* Carnegie Mellon Logo - Top Left */}
-            <div className="absolute -top-2 -left-2 md:-top-8 md:-left-8">
+            <div className="absolute -top-2 -left-2 md:-top-8 md:-left-12">
               <img 
                 src={cmuLogoNew} 
                 alt="Carnegie Mellon University"
@@ -86,7 +86,7 @@ const Hero = () => {
               <img 
                 src={umassLogoNew} 
                 alt="UMass Amherst"
-                className="w-12 h-12 md:w-16 md:h-16 object-contain opacity-60"
+                className="w-12 h-12 md:w-16 md:h-16 object-contain opacity-80"
               />
             </div>
           </div>
