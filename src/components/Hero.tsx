@@ -15,15 +15,6 @@ const Hero = () => {
         
         {/* Floating Company Logos */}
         <div className="absolute inset-0 opacity-40">
-          {/* UMass Logo */}
-          <div className="absolute top-[10%] left-[5%] animate-float" style={{ animationDelay: '0s', animationDuration: '15s' }}>
-            <img 
-              src="/lovable-uploads/840b11ca-d415-47c5-af0d-a26909dae55b.png" 
-              alt="UMass Amherst logo"
-              className="w-8 h-8 md:w-12 md:h-12 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
-            />
-          </div>
-          
           {/* AMD Logo */}
           <div className="absolute top-[20%] right-[8%] animate-float" style={{ animationDelay: '2s', animationDuration: '18s' }}>
             <img 
@@ -66,24 +57,6 @@ const Hero = () => {
               src="/lovable-uploads/24d4654e-0ca1-482e-8d06-92fe1b554be3.png" 
               alt="Axaram Codelabs logo"
               className="w-8 h-8 md:w-12 md:h-12 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
-            />
-          </div>
-          
-          {/* Carnegie Mellon Logo */}
-          <div className="absolute top-[35%] right-[5%] animate-float" style={{ animationDelay: '12s', animationDuration: '17s' }}>
-            <img 
-              src={cmuLogoNew} 
-              alt="Carnegie Mellon University logo"
-              className="w-12 h-12 md:w-16 md:h-16 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
-            />
-          </div>
-          
-          {/* UMass Logo */}
-          <div className="absolute bottom-[35%] left-[15%] animate-float" style={{ animationDelay: '14s', animationDuration: '19s' }}>
-            <img 
-              src={umassLogoNew} 
-              alt="UMass Amherst logo"
-              className="w-12 h-12 md:w-16 md:h-16 object-contain transition-all duration-300 hover:scale-110 hover:brightness-110"
             />
           </div>
         </div>
@@ -179,7 +152,7 @@ const Hero = () => {
         {/* Scroll Indicator */}
         <div className="mt-8 md:mt-16 flex justify-center animate-bounce relative">
           {/* Scottie the Dog - positioned at bottom border */}
-          <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 animate-float opacity-70" style={{ animationDelay: '1s', animationDuration: '20s' }}>
+          <div className="absolute -bottom-8 left-[45%] -translate-x-1/2 animate-float opacity-70" style={{ animationDelay: '1s', animationDuration: '20s' }}>
             <img 
               src={scottieImage} 
               alt="Scottie - Carnegie Mellon University mascot"
