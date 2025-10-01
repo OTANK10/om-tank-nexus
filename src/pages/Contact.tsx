@@ -39,8 +39,7 @@ const Contact = () => {
             Let's <span className="gradient-text">Connect</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Whether you're a graduate program admissions committee, industry recruiter, 
-            or fellow researcher, I'd love to discuss opportunities and collaborations.
+            Whether you're an industry recruiter or fellow researcher, I'd love to discuss opportunities and collaborations.
           </p>
         </div>
 
@@ -94,15 +93,7 @@ const Contact = () => {
         {/* What I'm Open To */}
         <Card className="p-8 shadow-medium mb-16 animate-fade-in">
           <h3 className="text-2xl font-bold mb-6 text-center">What I'm Open To</h3>
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <div className="text-center">
-              <div className="text-accent mb-3 flex justify-center">
-                <GraduationCap className="w-8 h-8" />
-              </div>
-              <h4 className="font-semibold mb-2">Graduate Programs</h4>
-              <p className="text-sm text-muted-foreground">Research opportunities, program discussions, academic collaboration</p>
-            </div>
-            
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="text-accent mb-3 flex justify-center">
                 <Briefcase className="w-8 h-8" />
