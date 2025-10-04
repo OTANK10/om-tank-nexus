@@ -52,10 +52,10 @@ const Contact = () => {
             </div>
             <h3 className="text-lg font-semibold mb-2">Email</h3>
             <a 
-              href="mailto:otank@umass.edu"
+              href="mailto:otank@andrew.cmu.edu"
               className="text-foreground hover:text-primary transition-colors"
             >
-              otank@umass.edu
+              otank@andrew.cmu.edu
             </a>
           </Card>
 
