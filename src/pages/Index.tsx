@@ -162,23 +162,24 @@ const Index = () => {
             <p className="text-muted-foreground">Recent features and press coverage</p>
           </div>
 
-          <a 
-            href="https://icons.cns.umass.edu/news/om-tank-25-returns-shape-future-ai-icons"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block animate-scale-in"
-          >
-            <Card className="p-6 hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-gradient-card border border-accent/20 group">
-              <div className="flex flex-col md:flex-row gap-6">
-                <div className="flex-1">
+          <div className="grid md:grid-cols-2 gap-6">
+            {/* iCons Article */}
+            <a 
+              href="https://icons.cns.umass.edu/news/om-tank-25-returns-shape-future-ai-icons"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block animate-scale-in"
+            >
+              <Card className="p-6 hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-gradient-card border border-accent/20 group h-full">
+                <div className="flex flex-col h-full">
                   <div className="flex items-center gap-2 mb-3">
                     <Badge variant="default" className="bg-accent">Featured</Badge>
-                    <span className="text-sm text-muted-foreground">February 2025</span>
+                    <span className="text-sm text-muted-foreground">October 2025</span>
                   </div>
-                  <h3 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-accent transition-colors">
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
                     Om Tank '25 Returns to Shape the Future of AI at iCons
                   </h3>
-                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                  <p className="text-muted-foreground mb-4 leading-relaxed flex-1">
                     Featured in iCons news for returning as AI Program Manager to lead AI integration 
                     across research labs and develop AI-aware educational curriculum, driving innovation 
                     in interdisciplinary research and education.
@@ -188,9 +189,38 @@ const Index = () => {
                     <ExternalLink className="w-4 h-4" />
                   </div>
                 </div>
-              </div>
-            </Card>
-          </a>
+              </Card>
+            </a>
+
+            {/* Neely Article */}
+            <a 
+              href="https://neelyanddaughters.com/portfolio-posts/neely-air-freestyle/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block animate-scale-in"
+            >
+              <Card className="p-6 hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-gradient-card border border-accent/20 group h-full">
+                <div className="flex flex-col h-full">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Badge variant="secondary">Project Feature</Badge>
+                    <span className="text-sm text-muted-foreground">May 2025</span>
+                  </div>
+                  <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">
+                    Neely Air Freestyle - Revolutionary Wearable Technology
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed flex-1">
+                    Featured as part of M5 ECE Team 9, developing the most advanced Neely Air Freestyle prototype - 
+                    a revolutionary wearable Human Interface Device using foot motion and pressure for control across 
+                    music, gaming, VR, and interactive media.
+                  </p>
+                  <div className="flex items-center gap-2 text-accent font-medium group-hover:gap-3 transition-all">
+                    <span>View portfolio</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </div>
+                </div>
+              </Card>
+            </a>
+          </div>
         </div>
       </div>
       
