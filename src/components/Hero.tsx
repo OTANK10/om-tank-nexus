@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/enhanced-button";
-import { Github, Linkedin, GraduationCap, ChevronDown } from "lucide-react";
+import { Github, Linkedin, GraduationCap, ChevronDown, Sparkles } from "lucide-react";
 import EducationDialog from "./EducationDialog";
 import umassLogoNew from "@/assets/umass-logo-new.png";
 import cmuLogoNew from "@/assets/cmu-logo-new.png";
@@ -91,6 +91,18 @@ const Hero = () => {
             </div>
           </div>
         </div>
+
+        {/* Featured Badge */}
+        <a 
+          href="https://icons.cns.umass.edu/news/om-tank-25-returns-shape-future-ai-icons"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 mb-4 px-4 py-2 bg-accent/10 hover:bg-accent/20 border border-accent/30 rounded-full text-sm font-medium text-accent transition-all duration-300 hover:scale-105 animate-fade-in"
+        >
+          <Sparkles className="w-4 h-4" />
+          <span>Featured in iCons News</span>
+          <span className="text-xs opacity-70">→</span>
+        </a>
 
         {/* Main Heading */}
         <div className="mb-4 md:mb-6 animate-slide-in-left">

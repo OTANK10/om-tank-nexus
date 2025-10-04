@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Calendar, MapPin, Award, ArrowRight } from "lucide-react";
+import { Calendar, MapPin, Award, ArrowRight, ExternalLink, Newspaper } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const experienceData = [
@@ -148,6 +148,51 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Hero />
+      
+      {/* Featured Press Section */}
+      <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-background to-muted/30">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-8 animate-fade-in">
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <Newspaper className="w-6 h-6 text-accent" />
+              <h2 className="text-2xl md:text-3xl font-bold">
+                In the <span className="gradient-text">News</span>
+              </h2>
+            </div>
+            <p className="text-muted-foreground">Recent features and press coverage</p>
+          </div>
+
+          <a 
+            href="https://icons.cns.umass.edu/news/om-tank-25-returns-shape-future-ai-icons"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block animate-scale-in"
+          >
+            <Card className="p-6 hover:shadow-strong transition-all duration-300 hover:-translate-y-1 bg-gradient-card border border-accent/20 group">
+              <div className="flex flex-col md:flex-row gap-6">
+                <div className="flex-1">
+                  <div className="flex items-center gap-2 mb-3">
+                    <Badge variant="default" className="bg-accent">Featured</Badge>
+                    <span className="text-sm text-muted-foreground">February 2025</span>
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-bold mb-3 group-hover:text-accent transition-colors">
+                    Om Tank '25 Returns to Shape the Future of AI at iCons
+                  </h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">
+                    Featured in iCons news for returning as AI Program Manager to lead AI integration 
+                    across research labs and develop AI-aware educational curriculum, driving innovation 
+                    in interdisciplinary research and education.
+                  </p>
+                  <div className="flex items-center gap-2 text-accent font-medium group-hover:gap-3 transition-all">
+                    <span>Read full article</span>
+                    <ExternalLink className="w-4 h-4" />
+                  </div>
+                </div>
+              </div>
+            </Card>
+          </a>
+        </div>
+      </div>
       
       {/* Experience Timeline Section */}
       <div data-section="experience" className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
