@@ -37,7 +37,6 @@ const EducationDialog = ({ children }: EducationDialogProps) => {
               <p className="text-sm text-muted-foreground mb-2">College of Engineering</p>
               <p className="text-sm font-medium mb-1">Advanced Study MS in ECE</p>
               <p className="text-sm">Graduating: December 2027</p>
-              <p className="text-sm text-muted-foreground">GPA: In Progress</p>
             </div>
           </div>
 
@@ -55,7 +54,6 @@ const EducationDialog = ({ children }: EducationDialogProps) => {
               <p className="text-sm text-muted-foreground mb-2">Riccio College of Engineering</p>
               <p className="text-sm font-medium mb-1">Bachelor of Science in Computer Engineering</p>
               <p className="text-sm">Graduated: May 2025</p>
-              <p className="text-sm text-accent font-medium">GPA: 3.7/4.0</p>
             </div>
           </div>
         </div>
