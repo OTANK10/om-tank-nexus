@@ -35,8 +35,8 @@ const EducationDialog = ({ children }: EducationDialogProps) => {
             <div className="flex-1 min-w-0">
               <h3 className="text-lg font-semibold text-primary">Carnegie Mellon University</h3>
               <p className="text-sm text-muted-foreground mb-2">College of Engineering</p>
-              <p className="text-sm font-medium mb-1">Advanced Study MS in ECE</p>
-              <p className="text-sm font-medium mb-1">MS in Engineering Technology and Innovation Management</p>
+              <p className="text-sm font-medium mb-1">MS in ECE</p>
+              <p className="text-sm font-medium mb-1">MS in Engineering and Technology Innovation Management</p>
               <p className="text-sm">Graduating: December 2027</p>
             </div>
           </div>
