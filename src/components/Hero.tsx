@@ -110,9 +110,10 @@ const Hero = () => {
             Hi, I'm <span className="gradient-text">Om</span>
           </h1>
           <h2 className="text-base sm:text-xl md:text-2xl text-muted-foreground font-medium">
-            <span className="block sm:hidden">Computer Engineering Graduate</span>
-            <span className="block sm:hidden">VLSI Design | AI-Hardware Co-optimization</span>
-            <span className="hidden sm:block">Computer Engineering Graduate | VLSI Design | AI-Hardware Co-optimization</span>
+            <span className="block sm:hidden">MS Student in ECE & ETIM at CMU</span>
+            <span className="block sm:hidden">Technical Leader | AI-Hardware Enthusiast</span>
+            <span className="hidden sm:block">MS Student in ECE & ETIM at CMU | Technical Leader & AI-Hardware Enthusiast</span>
+            <span className="block text-sm sm:text-base md:text-lg mt-2 text-accent/90">Focus: VLSI Architecture for AI</span>
           </h2>
         </div>
 
