@@ -6,6 +6,16 @@ import { Star, BookOpen, Film, Tv, ExternalLink, Calendar, Gamepad2 } from "luci
 const recommendationsData = [
   {
     id: 1,
+    title: "The Last Question",
+    author: "Isaac Asimov",
+    type: "Book",
+    category: "Science Fiction",
+    description: "A profound short story spanning trillions of years, exploring humanity's quest to reverse entropy. Asimov's masterpiece that makes you ponder the ultimate fate of the universe.",
+    image: "/lovable-uploads/the-last-question.png",
+    link: "https://users.ece.cmu.edu/~gamvrosi/thelastq.html"
+  },
+  {
+    id: 2,
     title: "Succession",
     author: "HBO",
     type: "TV Show",
@@ -15,7 +25,7 @@ const recommendationsData = [
     link: "https://share.google/wJkqxCQ2pXrdIehrX"
   },
   {
-    id: 2,
+    id: 3,
     title: "The Brothers Karamazov",
     author: "Fyodor Dostoevsky",
     type: "Book",
@@ -25,7 +35,7 @@ const recommendationsData = [
     link: "https://share.google/zwGs8kuP4k9nmKJ8r"
   },
   {
-    id: 3,
+    id: 4,
     title: "Expedition 33 Clair Obscur",
     author: "Sandfall Interactive",
     type: "Video Game",
@@ -35,7 +45,7 @@ const recommendationsData = [
     link: "https://share.google/SAV9iPDnhOjLZ224N"
   },
   {
-    id: 4,
+    id: 5,
     title: "The Three-Body Problem",
     author: "Netflix",
     type: "TV Show",
@@ -43,16 +53,6 @@ const recommendationsData = [
     description: "Mind-bending hard science fiction that combines physics, computer science, and philosophy. The technical concepts are brilliantly woven into the narrative.",
     image: "/lovable-uploads/328a10fe-ce5e-4c58-be48-e00da6fd7a6c.png",
     link: "https://share.google/qWTltnAcfrrk3TgWl"
-  },
-  {
-    id: 5,
-    title: "The Last Question",
-    author: "Isaac Asimov",
-    type: "Book",
-    category: "Science Fiction",
-    description: "A profound short story spanning trillions of years, exploring humanity's quest to reverse entropy. Asimov's masterpiece that makes you ponder the ultimate fate of the universe.",
-    image: "/lovable-uploads/the-last-question.png",
-    link: "https://users.ece.cmu.edu/~gamvrosi/thelastq.html"
   }
 ];
 
