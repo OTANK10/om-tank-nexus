@@ -52,7 +52,7 @@ const recommendationsData = [
     category: "Science Fiction",
     description: "A profound short story spanning trillions of years, exploring humanity's quest to reverse entropy. Asimov's masterpiece that makes you ponder the ultimate fate of the universe.",
     image: "/lovable-uploads/the-last-question.png",
-    link: "https://share.google/asimov-last-question"
+    link: "https://users.ece.cmu.edu/~gamvrosi/thelastq.html"
   }
 ];
 
