@@ -120,10 +120,11 @@ const Hero = () => {
         {/* Elevator Pitch */}
         <div className="mb-6 md:mb-8 animate-slide-in-right">
           <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Passionate about bridging the gap between hardware and software through innovative 
-            <span className="text-accent font-medium"> VLSI design</span> and 
-            <span className="text-primary font-medium"> AI-hardware optimization</span>. 
-            Committed to community leadership and driving technological advancement.
+            I build performance-critical systems at the intersection of hardware and software, with a focus on
+            <span className="text-accent font-medium"> deterministic design</span>,
+            <span className="text-primary font-medium"> real-time signal processing</span>, and
+            <span className="text-accent font-medium"> high-throughput architectures</span>.
+            I enjoy leading small teams to ship technically rigorous solutions under tight performance constraints.
           </p>
         </div>
 
