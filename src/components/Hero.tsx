@@ -113,7 +113,7 @@ const Hero = () => {
             <span className="block sm:hidden">MS Student in ECE & ETIM at CMU</span>
             <span className="block sm:hidden">Technical Leader | AI-Hardware Enthusiast</span>
             <span className="hidden sm:block">MS Student in ECE & ETIM at CMU | Technical Leader & AI-Hardware Enthusiast</span>
-            <span className="block text-sm sm:text-base md:text-lg mt-2 text-accent/90">Focus: VLSI Architecture for AI</span>
+            <span className="block text-sm sm:text-base md:text-lg mt-2 text-accent/90">Focus: Deterministic Hardware-Software Co-Design</span>
           </h2>
         </div>
 
